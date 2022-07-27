@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #8d2828;
+}
+.container{
+    max-width: 1150px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.card{
+    border: 2px solid brown;
+}
+.left-card{
+background-color: silver;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.slika{
+    height: 400px;
+    
+}
+.potreseno-novca{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    position: relative;
+    background-image: url(file:///C:/Users/jasmi/OneDrive/Desktop/JavaScript%20vezbe/pijacajs/img/cart.png);
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+}
+
+.total{
+    position: absolute;
+    bottom: 2%;
+    font-size: 24px;
+    left: 3%;
+}
