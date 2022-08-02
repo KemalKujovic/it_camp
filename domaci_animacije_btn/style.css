@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+.section{
+    height: 100vh;
+    
+}
+.section h1{
+    text-align: center;
+    line-height: 100vh;
+    font-size: 60px;
+    
+}
+.section h1 span{
+    transition: 0.3s all ease;
+    opacity: 0;
+    transform: translateY(50px);
+    display: inline-block;
+}
+.section .animacija{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.section2 h1{
+    line-height: 1.3;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+.section2 .images{
+
+    display: flex;
+}
+.section2 .images img{
+    width: 50%;
+    transition: 1s all ease;
+}
+.slideFromLeft{
+    transform: translateX(-200px);
+    opacity: 0;
+}
+.slideFromRight{
+    transform: translateX(200px);
+    opacity: 0;
+}
+.animacijaImg{
+transform: translateX(0px);
+opacity: 1;
+}
+
+.border-line {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s all ease;
+}
+
+.btnanimacija{
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.buttoni{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+}
+#prvi-tekst{
+width: 308px;
+padding: 10px;
+position: absolute;
+right: 42%;
+top: 20%;
+height: 80px;
+font-size: 30px;
+}
+
+#plus{
+    font-size: 25px;
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#minus{
+    font-size: 25px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.butonti-2{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+}
