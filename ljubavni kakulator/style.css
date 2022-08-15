@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    /* background-color: gray; */
+    background: linear-gradient(90deg, rgba(191,54,205,1) 9%, rgba(215,0,58,1) 49%, rgba(218,64,202,1) 100%);
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+height: 300px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+input{
+    height: 30px;
+    outline-color: brown;
+ 
+}
+.zasliku{
+background-image: url(heart.png);
+background-size: cover;
+width: 150px;
+height: 130px;
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 24px;
+}
+
+
+.inputs button{
+    width: 50%;
+    border: none;
+    border-radius: 16px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 24px;
+    height: 30px;
+    color: black;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
