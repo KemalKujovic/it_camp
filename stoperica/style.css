@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(to left, #c3e9ee, #d7d2f0);
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.zasliku {
+  width: 30vw;
+}
+.container p {
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.butonsi button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cecefe;
+}
+.shortcut {
+  width: 300px;
+  top: 0;
+  left: 0;
+  height: 500px;
+  position: absolute;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.skracenica {
+  border-bottom: 1px solid white;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.key-code {
+  background-color: #eaeaea;
+  color: black;
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  padding: 10px 13px;
+}
+
+.keys ul {
+  margin-top: 50px;
+  margin-left: 20px;
+  list-style: none;
+}
+.keys ul li {
+  margin-bottom: 50px;
+}
+.key-text {
+  font-family: "Handlee", cursive;
+  margin-left: 15px;
+}
