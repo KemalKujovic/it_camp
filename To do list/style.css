@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: brown;
+}
+.container{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDolist{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.add {
+    margin-top: 30px;
+}
+.add input{
+    width: 300px;
+    padding: 10px 0px;
+}
+.add button{
+    width: 150x;
+    padding: 10px 30px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+#izbrisati{
+    display: none;
+}
+.todoList2{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background: gainsboro;
+    border: 2px solid black;
+}
+.todoList2 h1{
+    display: inline;
+}
+.todoList2 button{
+    background: red;
+    padding: 5px;
+}
