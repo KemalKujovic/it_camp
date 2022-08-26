@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(189, 214, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader{
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s infinite;
+}
+
+.hide{
+    animation: fade 3s forwards;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade{
+100%{
+    opacity: 0;
+    visibility: hidden;
+}
+}
