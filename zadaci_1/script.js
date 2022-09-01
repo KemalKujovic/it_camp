@@ -773,25 +773,34 @@
 //   }
 //   for (let k = 0; k <= i; k++){
 //     output += '* ';
-//   } 
-//   console.log(output);  
-// } 
-
+//   }
+//   console.log(output);
+// }
 
 unos = 4;
-zvezdice = '*';
+zvezdice = "*";
 
 for (let i = 0; i < unos; i++) {
   let razmak = "";
-  for (let j = i; j < unos -1; j++) {
-  razmak += ' ';  
-  
-}
-console.log(razmak + zvezdice);
-zvezdice += ' *';
+  for (let j = i; j < unos - 1; j++) {
+    razmak += " ";
+  }
+  console.log(razmak + zvezdice);
+  zvezdice += " *";
 }
 // osnovne programiranje python
 // osnovni racunarskih mreza
 // husein nasser
 
-// up going js 
+// up going js
+
+const numbers = [7, 10, 12, 14, 4];
+
+// pomozen sa 3 , kvadiramo i veci br od 15
+
+const pomozeni = numbers
+  .map((el) => el * 3)
+  .map((el) => el ** 2)
+  .filter((el) => el < 200);
+
+console.log(pomozeni);
