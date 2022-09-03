@@ -804,3 +804,49 @@ const pomozeni = numbers
   .filter((el) => el < 200);
 
 console.log(pomozeni);
+
+const arr1 = [12, 15, 19, 22, 58, 36, -32, -57];
+
+const noviArr = arr1.filter((el) => el > 18);
+console.log(noviArr);
+
+const pomnArr = arr1.map((el) => el * 3);
+console.log(pomnArr);
+const arr4 = [1, 35, 47, 65, 44, 12, 78, 87];
+const zajArr = arr4.filter((el) => el % 2 === 0).map((el) => el * 2);
+console.log(zajArr);
+
+const arr5 = [1, 3, 5, 7, 9, 6, 2];
+
+const suma = arr5.reduce((acc, curr) => acc + curr);
+console.log(suma);
+
+// iz datog niza izdvojiti sve parne brojeve vece od nul. Zatim ih
+// im vratiti sumu elemenata pom sa 3
+
+const arr6 = [-56, -32, 55, 12, 14, 13, 45, 63];
+
+// const arr7 = arr6
+//   .filter((el) => el > 0)
+//   .map((el) => el % 2 === 0)
+//   .reduce((acc, curr) => (acc + curr) * 3);
+
+//   console.log(arr7);
+
+const suma3 = arr6
+  .filter((el) => el > 0 && el % 2 === 0)
+  .map((el) => el * 3)
+  .reduce((acc, curr) => acc + curr, 0);
+
+console.log(suma3);
+
+// reduce - 2 primer
+
+const arr13 = [420, 999, 1320, 560, 740, 2090];
+
+const artikli = arr13.reduce((acc, curr) => acc + curr, 400);
+
+// iz datog niza vratiti sumu elemenata koji su iz intervala (od 12 do 32) pomnozenih sa 5.
+// pocetna vrednost sume treba biti 299.
+
+// const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
