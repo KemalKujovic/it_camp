@@ -849,4 +849,29 @@ const artikli = arr13.reduce((acc, curr) => acc + curr, 400);
 // iz datog niza vratiti sumu elemenata koji su iz intervala (od 12 do 32) pomnozenih sa 5.
 // pocetna vrednost sume treba biti 299.
 
-// const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
+const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
+const arr9 = [-14, 26, 21, 13, 22, 19, 55, 46, 58, 196];
+// const sum5 = arr8
+//   .filter((el) => el > 12 && el < 32)
+//   .map((el) => el * 5)
+//   .reduce((acc, curr) => acc + curr, 299);
+// console.log(sum5);
+
+// function moja(arr) {
+//   return arr
+//     .filter((el) => el > 12 && el < 32)
+//     .map((el) => el * 5)
+//     .reduce((acc, curr) => acc + curr, 299);
+// }
+// console.log(moja(arr9));
+// console.log(moja(arr8));
+
+const moja1 = (arr) => {
+  return arr
+    .filter((el) => el > 12 && el < 32)
+    .map((el) => el * 5)
+    .reduce((acc, curr) => acc + curr, 299);
+};
+
+console.log(moja1(arr9));
+console.log(moja1(arr8));
