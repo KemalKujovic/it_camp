@@ -851,38 +851,32 @@ const arr6 = [-56, -32, 55, 12, 14, 13, 45, 63];
 
 // // const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
 
-
-
-let ns = 0, ew = 0; 
+let ns = 0,
+  ew = 0;
 function isValidWalk(walk) {
-  if(walk.length === 10){
-    for (let i = 0; i < walk.length; i++) { 
-      if (i == 'n') ns += 1; 
-      if (i == 's') ns -= 1; 
-      if (i == 'e') ew += 1; 
-      if (i == 'w') ew -= 1; 
-    } 
-  }
-  else
-    return false
-    return ns === 0 && ew === 0; 
+  if (walk.length === 10) {
+    for (let i = 0; i < walk.length; i++) {
+      if (i == "n") ns += 1;
+      if (i == "s") ns -= 1;
+      if (i == "e") ew += 1;
+      if (i == "w") ew -= 1;
+    }
+  } else return false;
+  return ns === 0 && ew === 0;
 }
 
-console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));
+console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
 
-
-
-function addBinary(a,b) {
+function addBinary(a, b) {
   let bin = Number(a) + Number(b);
-    return bin.toString(2);
-  }
+  return bin.toString(2);
+}
 
-  console.log(addBinary(1,1));
-
+console.log(addBinary(1, 1));
 
 // function accum(s) {
 //   let arr = [];
-  
+
 //   for(let i =0; i < s.length; i++){
 //     arr.push(s[i])
 //   }
@@ -890,7 +884,6 @@ function addBinary(a,b) {
 //   // your code
 // }
 //   console.log(accum('fada'));
-
 
 // function accum(s) {
 //   let arr = []
@@ -909,3 +902,91 @@ function addBinary(a,b) {
 //   }
 
 //   console.log(accum('dsafg'));
+
+// w3rescoutce array //
+
+//Code here
+console.log("----------------");
+function sumTwoSmallestNumbers(numbers) {
+  let lowNum = numbers[0];
+  let sum = 0;
+  let lowNum2 = numbers[1];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < lowNum) {
+      lowNum2 = lowNum;
+      lowNum = numbers[i];
+    } else if (numbers[i] < lowNum2) {
+      lowNum2 = numbers[i];
+    }
+  }
+  return (sum = lowNum + lowNum2);
+}
+
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 39]));
+
+// function sumTwoSmallestNumbers(numbers) {
+//   let min = numbers[0];
+//   let secondMin = numbers[1];
+//   for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] < min) {
+//       secondMin = min;
+//       min = numbers[i];
+//     } else if (numbers[i] < secondMin) {
+//       secondMin = numbers[i];
+//     }
+//   }
+//   return min + secondMin;
+// }
+//   console.log(sumTwoSmallestNumbers([4, 3, 2, 1]));  // 3
+// console.log(sumTwoSmallestNumbers([8, 7, 6, 5]));  // 11
+//   console.log(sumTwoSmallestNumbers([5,8,12,19,39]));
+console.log(`===============`);
+
+// color = ["Blue", "Green", "Red", 'Orange', 'Violet'];
+// o = ["th", "st", "nd","rd"];
+
+// color.forEach((el, i) => {
+//   o.forEach(element => {
+//     console.log(`${i + 1}${element} Chocie is ${el}`);
+//   })
+
+// });
+
+color = ["Blue", "Green", "Red", "Orange", "Violet"];
+o = ["th", "st", "nd", "rd"];
+
+color.forEach((el, i) => {
+  console.log(`${i + 1}${o[0]} Chocie is ${el}`);
+});
+
+array1 = [3, 5, 6, 7, 8, 136, 7, 8, 136, 7, 8, 13];
+array2 = [1, 0, 2, 3, 4];
+
+// let lastNum = array1.pop()
+// array1.forEach((el, i) => {
+// array3.push(el + array2[i], el)
+
+// })
+// console.log(array3);
+
+// if(array1.length > array2.length){
+// }
+  
+
+arrayy = [NaN, 0, 15,false,-22,47,null]
+
+// arrayNew = arrayy.filter((el) => el !== false && el !== NaN && el !== null);
+// console.log(arrayNew);
+
+
+arrayy = [NaN, 0, 15,false,-22,47,null]
+
+arrayNew = arrayy.filter((el) => typeof el === 'number' && el !== 0 && el !== NaN);
+console.log(arrayNew);
+
+
+arrayNew = arrayy.filter((el)=> {
+  if(el){
+    return el
+  }
+})
