@@ -833,45 +833,79 @@ const arr6 = [-56, -32, 55, 12, 14, 13, 45, 63];
 
 //   console.log(arr7);
 
-const suma3 = arr6
-  .filter((el) => el > 0 && el % 2 === 0)
-  .map((el) => el * 3)
-  .reduce((acc, curr) => acc + curr, 0);
+// const suma3 = arr6
+//   .filter((el) => el > 0 && el % 2 === 0)
+//   .map((el) => el * 3)
+//   .reduce((acc, curr) => acc + curr, 0);
 
-console.log(suma3);
+// console.log(suma3);
 
-// reduce - 2 primer
+// // reduce - 2 primer
 
-const arr13 = [420, 999, 1320, 560, 740, 2090];
+// const arr13 = [420, 999, 1320, 560, 740, 2090];
 
-const artikli = arr13.reduce((acc, curr) => acc + curr, 400);
+// const artikli = arr13.reduce((acc, curr) => acc + curr, 400);
 
-// iz datog niza vratiti sumu elemenata koji su iz intervala (od 12 do 32) pomnozenih sa 5.
-// pocetna vrednost sume treba biti 299.
+// // iz datog niza vratiti sumu elemenata koji su iz intervala (od 12 do 32) pomnozenih sa 5.
+// // pocetna vrednost sume treba biti 299.
 
-const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
-const arr9 = [-14, 26, 21, 13, 22, 19, 55, 46, 58, 196];
-// const sum5 = arr8
-//   .filter((el) => el > 12 && el < 32)
-//   .map((el) => el * 5)
-//   .reduce((acc, curr) => acc + curr, 299);
-// console.log(sum5);
+// // const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
 
-// function moja(arr) {
-//   return arr
-//     .filter((el) => el > 12 && el < 32)
-//     .map((el) => el * 5)
-//     .reduce((acc, curr) => acc + curr, 299);
+
+
+let ns = 0, ew = 0; 
+function isValidWalk(walk) {
+  if(walk.length === 10){
+    for (let i = 0; i < walk.length; i++) { 
+      if (i == 'n') ns += 1; 
+      if (i == 's') ns -= 1; 
+      if (i == 'e') ew += 1; 
+      if (i == 'w') ew -= 1; 
+    } 
+  }
+  else
+    return false
+    return ns === 0 && ew === 0; 
+}
+
+console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));
+
+
+
+function addBinary(a,b) {
+  let bin = Number(a) + Number(b);
+    return bin.toString(2);
+  }
+
+  console.log(addBinary(1,1));
+
+
+// function accum(s) {
+//   let arr = [];
+  
+//   for(let i =0; i < s.length; i++){
+//     arr.push(s[i])
+//   }
+//   return arr.join('-').toUpperCase();
+//   // your code
 // }
-// console.log(moja(arr9));
-// console.log(moja(arr8));
+//   console.log(accum('fada'));
 
-const moja1 = (arr) => {
-  return arr
-    .filter((el) => el > 12 && el < 32)
-    .map((el) => el * 5)
-    .reduce((acc, curr) => acc + curr, 299);
-};
 
-console.log(moja1(arr9));
-console.log(moja1(arr8));
+// function accum(s) {
+//   let arr = []
+//   for (let i = 0; i < s.length; i++) {
+//   arr.push(format(s[i], i + 1))
+//   }
+//   return arr.join('-');
+//   }
+//  function format(s, num) {
+//   console.log(num);
+//   let letter = s.toUpperCase()
+//  while (letter.length !== num) {
+//   letter += s.toLowerCase()
+//   }
+//   return letter;
+//   }
+
+//   console.log(accum('dsafg'));
