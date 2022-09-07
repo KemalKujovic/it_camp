@@ -670,323 +670,375 @@
 // // for (let i = 0; i < arr.length; i++) {
 
 // //     if(arr[i] % 2 === 0){
-// //         for (let j = 0; j < arr[i].length; j++) {
-// //         if(arr[i][j] % 2 === 0){
-// //             suma += arr[i][j];
-// //         }
-// //         }
-// //     }
-// // }
+// // //         for (let j = 0; j < arr[i].length; j++) {
+// // //         if(arr[i][j] % 2 === 0){
+// // //             suma += arr[i][j];
+// // //         }
+// // //         }
+// // //     }
+// // // }
 
-// // console.log(suma);
+// // // console.log(suma);
 
-// // arr = [
-// //     [1, 2, 3],
-// //     [4, 5, 6],
-// //     [7, 8, 9],
-// //   ];
-// // suma = 0;
-// // for (let i = 0; i < arr.length; i++) {
-// //     for (let j = 2; j < arr[i].length; j++) {
+// // // arr = [
+// // //     [1, 2, 3],
+// // //     [4, 5, 6],
+// // //     [7, 8, 9],
+// // //   ];
+// // // suma = 0;
+// // // for (let i = 0; i < arr.length; i++) {
+// // //     for (let j = 2; j < arr[i].length; j++) {
 
-// //     }
+// // //     }
 
-// // }
+// // // }
+
+// // // const arr = [
+// // //   [1, 3, 4, 2],
+// // //   [4, 5, 3, 5],
+// // //   [5, 2, 6, 4],
+// // //   [8, 2, 9, 3]
+// // // ];
 
 // // const arr = [
-// //   [1, 3, 4, 2],
-// //   [4, 5, 3, 5],
-// //   [5, 2, 6, 4],
-// //   [8, 2, 9, 3]
+// //   [1, 2, 3],
+// //   [4, 5, 6],
+// //   [7, 8, 9],
 // // ];
+// // let ispis = "";
+// // let ispis2 = "";
+// // let suma = 0;
+// // let suma2 = 0;
+// // for (let i = 0; i < arr.length; i++) {
+// //   ispis += arr[i][i];
+// //   ispis2 += arr[i][arr.length - 1 - i];
+// //   suma += arr[i][i];
+// //   suma2 += arr[i][arr.length - 1 - i];
 
-// const arr = [
-//   [1, 2, 3],
-//   [4, 5, 6],
-//   [7, 8, 9],
-// ];
-// let ispis = "";
-// let ispis2 = "";
-// let suma = 0;
-// let suma2 = 0;
-// for (let i = 0; i < arr.length; i++) {
-//   ispis += arr[i][i];
-//   ispis2 += arr[i][arr.length - 1 - i];
-//   suma += arr[i][i];
-//   suma2 += arr[i][arr.length - 1 - i];
+// // }
+// // console.log(ispis);
+// // console.log(ispis2);
+// // console.log(suma);
+// // console.log(suma2);
 
-// }
-// console.log(ispis);
-// console.log(ispis2);
-// console.log(suma);
-// console.log(suma2);
+// // console.log(suma);
+// // //   1
+// // //     5
+// // //       9
+// // //       samo glavne dijagonalne gorenadenih brojevi
+// // //       3
+// // //     5
+// // //   7
+// // //   suma sporedne dijagonale gorenavedenih brojeva
 
-// console.log(suma);
-// //   1
-// //     5
-// //       9
-// //       samo glavne dijagonalne gorenadenih brojevi
-// //       3
-// //     5
-// //   7
-// //   suma sporedne dijagonale gorenavedenih brojeva
+// // arr.forEach(e => {
+// // e.forEach(element => {
+// //   console.log(element);
+// // });
+// // })
+// // let zvezdica = '*';
+// // unos = Number(prompt('unesite broj redova'));
+// // str = '';
+// // for (let i = 0; i < unos; i++) {
+// //   str += '*'
+// //   console.log(str);
+// // }
 
-// arr.forEach(e => {
-// e.forEach(element => {
-//   console.log(element);
-// });
-// })
-// let zvezdica = '*';
-// unos = Number(prompt('unesite broj redova'));
-// str = '';
+// // unos = Number(prompt('unesite broj redova'));
+// // for (let i = 1; i <= unos; i++) {
+// //   str = '';
+// //   for (let j = 0; j < i; j++) {
+// //     str += i;
+// //   }
+// //   console.log(str);
+// // }
+
+// // unos = Number(prompt("unesite broj redova"));
+// // lastN = 0;
+// // for (let i = 1; i <= unos; i++) {
+// //   str = "";
+// //   for (let j = 0; j < i; j++) {
+// //     lastN++;
+// //     str += lastN;
+// //   }
+// //   console.log(str);
+// // }
+
+// // unos = Number(prompt("unesite broj redova"));
+// // for (let i = 0; i < unos; i++) {
+// //   let output = '';
+// //   for (let j =0; j < unos - i; j++) {
+
+// //     output += ' ';
+// //   }
+// //   for (let k = 0; k <= i; k++){
+// //     output += '* ';
+// //   }
+// //   console.log(output);
+// // }
+
+// unos = 4;
+// zvezdice = "*";
+
 // for (let i = 0; i < unos; i++) {
-//   str += '*'
-//   console.log(str);
-// }
-
-// unos = Number(prompt('unesite broj redova'));
-// for (let i = 1; i <= unos; i++) {
-//   str = '';
-//   for (let j = 0; j < i; j++) {
-//     str += i;
+//   let razmak = "";
+//   for (let j = i; j < unos - 1; j++) {
+//     razmak += " ";
 //   }
-//   console.log(str);
+//   console.log(razmak + zvezdice);
+//   zvezdice += " *";
 // }
+// // osnovne programiranje python
+// // osnovni racunarskih mreza
+// // husein nasser
 
-// unos = Number(prompt("unesite broj redova"));
-// lastN = 0;
-// for (let i = 1; i <= unos; i++) {
-//   str = "";
-//   for (let j = 0; j < i; j++) {
-//     lastN++;
-//     str += lastN;
-//   }
-//   console.log(str);
-// }
+// // up going js
 
-// unos = Number(prompt("unesite broj redova"));
-// for (let i = 0; i < unos; i++) {
-//   let output = '';
-//   for (let j =0; j < unos - i; j++) {
+// const numbers = [7, 10, 12, 14, 4];
 
-//     output += ' ';
-//   }
-//   for (let k = 0; k <= i; k++){
-//     output += '* ';
-//   }
-//   console.log(output);
-// }
+// // pomozen sa 3 , kvadiramo i veci br od 15
 
-unos = 4;
-zvezdice = "*";
-
-for (let i = 0; i < unos; i++) {
-  let razmak = "";
-  for (let j = i; j < unos - 1; j++) {
-    razmak += " ";
-  }
-  console.log(razmak + zvezdice);
-  zvezdice += " *";
-}
-// osnovne programiranje python
-// osnovni racunarskih mreza
-// husein nasser
-
-// up going js
-
-const numbers = [7, 10, 12, 14, 4];
-
-// pomozen sa 3 , kvadiramo i veci br od 15
-
-const pomozeni = numbers
-  .map((el) => el * 3)
-  .map((el) => el ** 2)
-  .filter((el) => el < 200);
-
-console.log(pomozeni);
-
-const arr1 = [12, 15, 19, 22, 58, 36, -32, -57];
-
-const noviArr = arr1.filter((el) => el > 18);
-console.log(noviArr);
-
-const pomnArr = arr1.map((el) => el * 3);
-console.log(pomnArr);
-const arr4 = [1, 35, 47, 65, 44, 12, 78, 87];
-const zajArr = arr4.filter((el) => el % 2 === 0).map((el) => el * 2);
-console.log(zajArr);
-
-const arr5 = [1, 3, 5, 7, 9, 6, 2];
-
-const suma = arr5.reduce((acc, curr) => acc + curr);
-console.log(suma);
-
-// iz datog niza izdvojiti sve parne brojeve vece od nul. Zatim ih
-// im vratiti sumu elemenata pom sa 3
-
-const arr6 = [-56, -32, 55, 12, 14, 13, 45, 63];
-
-// const arr7 = arr6
-//   .filter((el) => el > 0)
-//   .map((el) => el % 2 === 0)
-//   .reduce((acc, curr) => (acc + curr) * 3);
-
-//   console.log(arr7);
-
-// const suma3 = arr6
-//   .filter((el) => el > 0 && el % 2 === 0)
+// const pomozeni = numbers
 //   .map((el) => el * 3)
-//   .reduce((acc, curr) => acc + curr, 0);
+//   .map((el) => el ** 2)
+//   .filter((el) => el < 200);
 
-// console.log(suma3);
+// console.log(pomozeni);
 
-// // reduce - 2 primer
+// const arr1 = [12, 15, 19, 22, 58, 36, -32, -57];
 
-// const arr13 = [420, 999, 1320, 560, 740, 2090];
+// const noviArr = arr1.filter((el) => el > 18);
+// console.log(noviArr);
 
-// const artikli = arr13.reduce((acc, curr) => acc + curr, 400);
+// const pomnArr = arr1.map((el) => el * 3);
+// console.log(pomnArr);
+// const arr4 = [1, 35, 47, 65, 44, 12, 78, 87];
+// const zajArr = arr4.filter((el) => el % 2 === 0).map((el) => el * 2);
+// console.log(zajArr);
 
-// // iz datog niza vratiti sumu elemenata koji su iz intervala (od 12 do 32) pomnozenih sa 5.
-// // pocetna vrednost sume treba biti 299.
+// const arr5 = [1, 3, 5, 7, 9, 6, 2];
 
-// // const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
+// const suma = arr5.reduce((acc, curr) => acc + curr);
+// console.log(suma);
 
-let ns = 0,
-  ew = 0;
-function isValidWalk(walk) {
-  if (walk.length === 10) {
-    for (let i = 0; i < walk.length; i++) {
-      if (i == "n") ns += 1;
-      if (i == "s") ns -= 1;
-      if (i == "e") ew += 1;
-      if (i == "w") ew -= 1;
-    }
-  } else return false;
-  return ns === 0 && ew === 0;
-}
+// // iz datog niza izdvojiti sve parne brojeve vece od nul. Zatim ih
+// // im vratiti sumu elemenata pom sa 3
 
-console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
+// const arr6 = [-56, -32, 55, 12, 14, 13, 45, 63];
 
-function addBinary(a, b) {
-  let bin = Number(a) + Number(b);
-  return bin.toString(2);
-}
+// // const arr7 = arr6
+// //   .filter((el) => el > 0)
+// //   .map((el) => el % 2 === 0)
+// //   .reduce((acc, curr) => (acc + curr) * 3);
 
-console.log(addBinary(1, 1));
+// //   console.log(arr7);
 
-// function accum(s) {
-//   let arr = [];
+// // const suma3 = arr6
+// //   .filter((el) => el > 0 && el % 2 === 0)
+// //   .map((el) => el * 3)
+// //   .reduce((acc, curr) => acc + curr, 0);
 
-//   for(let i =0; i < s.length; i++){
-//     arr.push(s[i])
-//   }
-//   return arr.join('-').toUpperCase();
-//   // your code
+// // console.log(suma3);
+
+// // // reduce - 2 primer
+
+// // const arr13 = [420, 999, 1320, 560, 740, 2090];
+
+// // const artikli = arr13.reduce((acc, curr) => acc + curr, 400);
+
+// // // iz datog niza vratiti sumu elemenata koji su iz intervala (od 12 do 32) pomnozenih sa 5.
+// // // pocetna vrednost sume treba biti 299.
+
+// // // const arr8 = [-14, 26, 21, 13, 19, 55, 46, 58, 96];
+
+// let ns = 0,
+//   ew = 0;
+// function isValidWalk(walk) {
+//   if (walk.length === 10) {
+//     for (let i = 0; i < walk.length; i++) {
+//       if (i == "n") ns += 1;
+//       if (i == "s") ns -= 1;
+//       if (i == "e") ew += 1;
+//       if (i == "w") ew -= 1;
+//     }
+//   } else return false;
+//   return ns === 0 && ew === 0;
 // }
-//   console.log(accum('fada'));
 
-// function accum(s) {
-//   let arr = []
-//   for (let i = 0; i < s.length; i++) {
-//   arr.push(format(s[i], i + 1))
-//   }
-//   return arr.join('-');
-//   }
-//  function format(s, num) {
-//   console.log(num);
-//   let letter = s.toUpperCase()
-//  while (letter.length !== num) {
-//   letter += s.toLowerCase()
-//   }
-//   return letter;
-//   }
+// console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
 
-//   console.log(accum('dsafg'));
+// function addBinary(a, b) {
+//   let bin = Number(a) + Number(b);
+//   return bin.toString(2);
+// }
 
-// w3rescoutce array //
+// console.log(addBinary(1, 1));
 
-//Code here
-console.log("----------------");
-function sumTwoSmallestNumbers(numbers) {
-  let lowNum = numbers[0];
-  let sum = 0;
-  let lowNum2 = numbers[1];
-  for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] < lowNum) {
-      lowNum2 = lowNum;
-      lowNum = numbers[i];
-    } else if (numbers[i] < lowNum2) {
-      lowNum2 = numbers[i];
-    }
-  }
-  return (sum = lowNum + lowNum2);
-}
+// // function accum(s) {
+// //   let arr = [];
 
-console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 39]));
+// //   for(let i =0; i < s.length; i++){
+// //     arr.push(s[i])
+// //   }
+// //   return arr.join('-').toUpperCase();
+// //   // your code
+// // }
+// //   console.log(accum('fada'));
 
+// // function accum(s) {
+// //   let arr = []
+// //   for (let i = 0; i < s.length; i++) {
+// //   arr.push(format(s[i], i + 1))
+// //   }
+// //   return arr.join('-');
+// //   }
+// //  function format(s, num) {
+// //   console.log(num);
+// //   let letter = s.toUpperCase()
+// //  while (letter.length !== num) {
+// //   letter += s.toLowerCase()
+// //   }
+// //   return letter;
+// //   }
+
+// //   console.log(accum('dsafg'));
+
+// // w3rescoutce array //
+
+// //Code here
+// console.log("----------------");
 // function sumTwoSmallestNumbers(numbers) {
-//   let min = numbers[0];
-//   let secondMin = numbers[1];
+//   let lowNum = numbers[0];
+//   let sum = 0;
+//   let lowNum2 = numbers[1];
 //   for (let i = 1; i < numbers.length; i++) {
-//     if (numbers[i] < min) {
-//       secondMin = min;
-//       min = numbers[i];
-//     } else if (numbers[i] < secondMin) {
-//       secondMin = numbers[i];
+//     if (numbers[i] < lowNum) {
+//       lowNum2 = lowNum;
+//       lowNum = numbers[i];
+//     } else if (numbers[i] < lowNum2) {
+//       lowNum2 = numbers[i];
 //     }
 //   }
-//   return min + secondMin;
+//   return (sum = lowNum + lowNum2);
 // }
-//   console.log(sumTwoSmallestNumbers([4, 3, 2, 1]));  // 3
-// console.log(sumTwoSmallestNumbers([8, 7, 6, 5]));  // 11
-//   console.log(sumTwoSmallestNumbers([5,8,12,19,39]));
-console.log(`===============`);
 
-// color = ["Blue", "Green", "Red", 'Orange', 'Violet'];
-// o = ["th", "st", "nd","rd"];
+// console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 39]));
+
+// // function sumTwoSmallestNumbers(numbers) {
+// //   let min = numbers[0];
+// //   let secondMin = numbers[1];
+// //   for (let i = 1; i < numbers.length; i++) {
+// //     if (numbers[i] < min) {
+// //       secondMin = min;
+// //       min = numbers[i];
+// //     } else if (numbers[i] < secondMin) {
+// //       secondMin = numbers[i];
+// //     }
+// //   }
+// //   return min + secondMin;
+// // }
+// //   console.log(sumTwoSmallestNumbers([4, 3, 2, 1]));  // 3
+// // console.log(sumTwoSmallestNumbers([8, 7, 6, 5]));  // 11
+// //   console.log(sumTwoSmallestNumbers([5,8,12,19,39]));
+// console.log(`===============`);
+
+// // color = ["Blue", "Green", "Red", 'Orange', 'Violet'];
+// // o = ["th", "st", "nd","rd"];
+
+// // color.forEach((el, i) => {
+// //   o.forEach(element => {
+// //     console.log(`${i + 1}${element} Chocie is ${el}`);
+// //   })
+
+// // });
+
+// color = ["Blue", "Green", "Red", "Orange", "Violet"];
+// o = ["th", "st", "nd", "rd"];
 
 // color.forEach((el, i) => {
-//   o.forEach(element => {
-//     console.log(`${i + 1}${element} Chocie is ${el}`);
-//   })
-
+//   console.log(`${i + 1}${o[0]} Chocie is ${el}`);
 // });
 
-color = ["Blue", "Green", "Red", "Orange", "Violet"];
-o = ["th", "st", "nd", "rd"];
+// array1 = [3, 5, 6, 7, 8, 136, 7, 8, 136, 7, 8, 13];
+// array2 = [1, 0, 2, 3, 4];
 
-color.forEach((el, i) => {
-  console.log(`${i + 1}${o[0]} Chocie is ${el}`);
-});
+// // let lastNum = array1.pop()
+// // array1.forEach((el, i) => {
+// // array3.push(el + array2[i], el)
 
-array1 = [3, 5, 6, 7, 8, 136, 7, 8, 136, 7, 8, 13];
-array2 = [1, 0, 2, 3, 4];
+// // })
+// // console.log(array3);
 
-// let lastNum = array1.pop()
-// array1.forEach((el, i) => {
-// array3.push(el + array2[i], el)
+// // if(array1.length > array2.length){
+// // }
 
-// })
-// console.log(array3);
+// arrayy = [NaN, 0, 15,false,-22,47,null]
 
-// if(array1.length > array2.length){
-// }
-  
+// // arrayNew = arrayy.filter((el) => el !== false && el !== NaN && el !== null);
+// // console.log(arrayNew);
 
-arrayy = [NaN, 0, 15,false,-22,47,null]
+// arrayy = [NaN, 0, 15,false,-22,47,null]
 
-// arrayNew = arrayy.filter((el) => el !== false && el !== NaN && el !== null);
+// arrayNew = arrayy.filter((el) => typeof el === 'number' && el !== 0 && el !== NaN);
 // console.log(arrayNew);
 
+// arrayNew = arrayy.filter((el)=> {
+//   if(el){
+//     return el
+//   }
+// })
 
-arrayy = [NaN, 0, 15,false,-22,47,null]
+// // Write a JavaScript function to find the unique elements from two arrays. Go to the editor
 
-arrayNew = arrayy.filter((el) => typeof el === 'number' && el !== 0 && el !== NaN);
-console.log(arrayNew);
+// // Test Data :
+// // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// // ["1", "2", "3", "10", "100"]
+// // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// // ["1", "2", "3", "10", "100"]
+
+// console.log('---------------');
+const difference = (arr, arr2) => {
+  const arr3 = arr.concat(arr2);
+  const arr5 = arr3.flat(3);
+
+  let arr4 = arr5
+    .filter((el, i) => {
+      return arr5.indexOf(el) === i;
+    })
+    .sort((a, b) => {
+      return a - b;
+      // if (a > b) return 1;
+      // if (b > a) return -1;
+    });
+  return arr4;
+};
+
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 
 
-arrayNew = arrayy.filter((el)=> {
-  if(el){
-    return el
-  }
-})
+
+
+
+
+
+
+
+
+// const dif1 = [1,2,3];
+// const dif2 = [100,2,1,1,10];
+
+// console.log(dif2.indexOf(1));
+
+// const array123 = [1,6,8,79,45,21,65,85,32,654];
+// const max1 = array123.reduce((op, item) => op = op > item ? op : item, 0);
+// console.log(max1);
+
+// let numArray = [140000, 104, 99];
+// numArray.sort(function(a, b) {
+//   if(a > b) return 1;
+//   if(b > a) return -1;
+// });
+
+// console.log(numArray);
