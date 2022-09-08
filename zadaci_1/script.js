@@ -780,8 +780,6 @@
 // unos = 4;
 // zvezdice = "*";
 
-
-
 // 7 zadatak prompt // prompt kakulator
 
 // const unos = Number(prompt('Unesite broj'));
@@ -791,9 +789,6 @@
 // if (operacija === '+') {
 //   alert(`Zbir je ${unos + unos2}`)
 // }
-
-
-
 
 // for (let i = 0; i < unos; i++) {
 //   let razmak = "";
@@ -1013,9 +1008,9 @@
 
 // console.log('---------------');
 
-
 // domaci REMOVE DUPLICATE
 // const difference = (arr, arr2) => {
+//   // const arr3 = [...arr, ...arr2]
 //   const arr3 = arr.concat(arr2);
 //   const arr5 = arr3.flat(3);
 
@@ -1034,6 +1029,61 @@
 // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 // console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
 // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+
+// numbers = [10,20,10,40,50,60,70]
+// target = 50;
+// for (let i = 0; i < numbers.length; i++) {
+//     rest = target - numbers[i];
+//     const indexOf =  numbers.indexOf(rest)
+
+// }
+// console.log(sum);
+
+
+
+
+// function pairEl(num, targ){
+//     return num.filter((e,i)=> e)
+// }
+
+
+
+// ------------------------------
+// Cas vezbe --------------------
+// 1
+// function doubleNum(arr){
+//     return arr.map(e=> e * 2)
+// }
+// console.log(doubleNum([2,5,10]));
+
+// 2
+
+// function capitalizeNames(arr){
+//     return arr.map((el) => el[0].toUpperCase() + el.slice(1).toLowerCase());
+    
+// }
+// console.log(capitalizeNames(['John', 'JACOB']));
+// 3
+// function givemorefive(arr){
+// return arr.filter(el => el > 5)
+// }
+// console.log(givemorefive([3,6,8,2]));
+// -------------------------------
+// 4
+// function fiveCharter(arr){
+//     return arr.filter((arr,i)=> arr.length <= 5)
+
+// }
+// console.log(fiveCharter(['dog', 'wolf', 'sasass']));
+// 5
+
+// function stringConcat(arr){
+//     return arr.reduce((cur, el) => cur + String(el))
+
+// }
+// console.log(stringConcat([1,2,3]));
+// 6
+
 
 // ------------------------------
 // VEZBA
@@ -1054,11 +1104,8 @@
 
 // console.log(numArray);
 
-
-
-
 //JavaScript functions zadaci
-// Write a JavaScript function that reverse a number. 
+// Write a JavaScript function that reverse a number.
 // Example x = 32243;
 // Expected Output : 34223
 // 1 zadatak
@@ -1069,7 +1116,6 @@
 // })
 // console.log(reverseNum(123456));
 // ---------------------------------------------------
-
 
 // Write a JavaScript function that returns a passed string with letters in alphabetical order. Go to the editor
 // Example string : 'webmaster'
@@ -1111,7 +1157,7 @@
 // for (let i = 0; i < str.length; i++) {
 //   if(str[i].length > largest.length){
 //     largest = str[i]
-//     }  
+//     }
 //     return largest
 // }
 // }
@@ -1120,16 +1166,15 @@
 // ---------------------------------------------------
 // ---------------------------------------------------
 
-
 // function longestWord(str){
 //   str = str.split(' ');
 //   let maxLength = "";
 //   for (let i = 0; i < str.length; i++) {
 //     if(str[i].length > maxLength.length){
 //       maxLength = str[i];
-//     }  
+//     }
 //   }
-  
+
 //   return maxLength;
 //   }
 //   console.log(longestWord('Webs Development Tutorial'));
@@ -1137,6 +1182,57 @@
 // ---------------------------------------------------
 // ---------------------------------------------------
 // https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+// 30 - 31 - 36
+
+// domaci zadatak 30
+
+// Write a JavaScript function to merge two arrays and removes all duplicates elements. Go to the editor
+
+// Test data :
+// var array1 = [1, 2, 3];
+// var array2 = [2, 30, 1];
+// console.log(merge_array(array1, array2));
+// [3, 2, 30, 1]
+
+// function merge_array(arr1,arr2){
+//     // const arrayTogh1 = arr1.concat(arr2)
+//     const arr3 = [...arr1, ...arr2];
+//     return arr3.filter((el, i) => arr3.indexOf(el) === i)
+
+// }
+// console.log(merge_array(array1, array2));
+
+// domaci zadatak 31
+// Write a JavaScript function to remove a specific element from an array. Go to the editor
+
+// Test data :
+// [2, 9, 6]
+
+// function remove_array_element(arr, spec){
+//     return arr.filter((e) => e !== spec)
+// }
+
+// console.log(remove_array_element([2, 5, 9, 6], 5));
+
+
+// domaci zadatak 36
+
+// 36. Write a JavaScript function to create a specified number of elements with pre-filled numeric value array.
+
+const array_filled = (filed, value) => {
+    const arr1 = [];
+    for (let i = 0; i < filed; i++) {
+        arr1.push(value)
+    }
+    return arr1
+}
+
+
+// Test Data :
+console.log(array_filled(6, 0));
+// // [0, 0, 0, 0, 0, 0]
+console.log(array_filled(4, 11));
+// // [11, 11, 11, 11]
 
 
 
