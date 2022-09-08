@@ -780,6 +780,21 @@
 // unos = 4;
 // zvezdice = "*";
 
+
+
+// 7 zadatak prompt // prompt kakulator
+
+// const unos = Number(prompt('Unesite broj'));
+// const unos2 = Number(prompt('Unesite drug broj'));
+// const operacija = prompt('* / + -');
+
+// if (operacija === '+') {
+//   alert(`Zbir je ${unos + unos2}`)
+// }
+
+
+
+
 // for (let i = 0; i < unos; i++) {
 //   let razmak = "";
 //   for (let j = i; j < unos - 1; j++) {
@@ -988,7 +1003,7 @@
 //   }
 // })
 
-// // Write a JavaScript function to find the unique elements from two arrays. Go to the editor
+// // Write a JavaScript function to find the unique elements from two arrays.
 
 // // Test Data :
 // // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
@@ -997,35 +1012,31 @@
 // // ["1", "2", "3", "10", "100"]
 
 // console.log('---------------');
-const difference = (arr, arr2) => {
-  const arr3 = arr.concat(arr2);
-  const arr5 = arr3.flat(3);
-
-  let arr4 = arr5
-    .filter((el, i) => {
-      return arr5.indexOf(el) === i;
-    })
-    .sort((a, b) => {
-      return a - b;
-      // if (a > b) return 1;
-      // if (b > a) return -1;
-    });
-  return arr4;
-};
-
-console.log(difference([1, 2, 3], [100, 2, 1, 10]));
-console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
-console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 
 
+// domaci REMOVE DUPLICATE
+// const difference = (arr, arr2) => {
+//   const arr3 = arr.concat(arr2);
+//   const arr5 = arr3.flat(3);
 
+//   let arr4 = arr5
+//     .filter((el, i) => {
+//       return arr5.indexOf(el) === i;
+//     })
+//     .sort((a, b) => {
+//       return a - b;
+//       // if (a > b) return 1;
+//       // if (b > a) return -1;
+//     });
+//   return arr4;
+// };
 
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 
-
-
-
-
-
+// ------------------------------
+// VEZBA
 // const dif1 = [1,2,3];
 // const dif2 = [100,2,1,1,10];
 
@@ -1042,3 +1053,90 @@ console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 // });
 
 // console.log(numArray);
+
+
+
+
+//JavaScript functions zadaci
+// Write a JavaScript function that reverse a number. 
+// Example x = 32243;
+// Expected Output : 34223
+// 1 zadatak
+
+// const reverseNum = (num => {
+//     const obrnuti = String(num);
+//     return obrnuti.split('').reverse().join('');
+// })
+// console.log(reverseNum(123456));
+// ---------------------------------------------------
+
+
+// Write a JavaScript function that returns a passed string with letters in alphabetical order. Go to the editor
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+// 2 zadatak
+
+// const alphaFun = function(str){
+// return str.split('').sort().join('');
+// }
+
+// console.log(alphaFun('webmaster'));
+
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+// Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. Go to the editor
+// Example string : 'the quick brown fox'
+// Expected Output : 'The Quick Brown Fox '
+// 3 zadatak
+
+// const velikoSlovo = function(str){
+//   const velikoPrvo = str.split(' ');
+//   const fristLetter = velikoPrvo.map(e => e[0].toUpperCase() + e.slice(1)).join(' ');
+//   return fristLetter
+// }
+// console.log(velikoSlovo('the quick brown fox'));
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+// Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+// 4 zadatak
+
+// function longestWord(str){
+// str = str.split(' ');
+// let largest = '';
+
+// for (let i = 0; i < str.length; i++) {
+//   if(str[i].length > largest.length){
+//     largest = str[i]
+//     }  
+//     return largest
+// }
+// }
+// console.log(longestWord('Web Development Tutorialsasasa'));
+
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+
+// function longestWord(str){
+//   str = str.split(' ');
+//   let maxLength = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if(str[i].length > maxLength.length){
+//       maxLength = str[i];
+//     }  
+//   }
+  
+//   return maxLength;
+//   }
+//   console.log(longestWord('Webs Development Tutorial'));
+
+// ---------------------------------------------------
+// ---------------------------------------------------
+// https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+
+
+
