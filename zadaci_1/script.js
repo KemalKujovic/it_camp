@@ -1178,7 +1178,105 @@
 //   return maxLength;
 //   }
 //   console.log(longestWord('Webs Development Tutorial'));
+// ---------------------------------------------------
+// Write a JavaScript function which accepts an argument and returns the type. Go to the editor
+// Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
+// Click me to see the solution
+// function accepts(type){
+//     return (typeof type)
+// }
+// console.log(accepts(4));
+// ---------------------------------------------------
+// ---------------------------------------------------
 
+
+
+// Write a JavaScript function to extract unique characters from a string. Go to the editor
+// Example string : "thequickbrownfoxjumpsoverthelazydog"
+// Expected Output : "thequickbrownfxjmpsvlazydg"
+// function uniqueS(str){
+// uniq = '';
+// let str2 = str;
+// for (let i = 0; i < str2.length; i++) {
+//     if(str.indexOf(str2[i]) === i){
+//         uniq += str[i];
+//     };
+// }
+    
+// return uniq
+// }
+
+// console.log(uniqueS("thequickbrownfoxjumpsoverthelazydog"));
+
+
+
+// ---------------------------------------------------
+
+// Complete the solution so that the function will break up camel casing, using a space between words.
+
+// Example
+// "camelCasing"  =>  "camel Casing"
+// "identifier"   =>  "identifier"
+// ""             =>  ""
+
+
+// function solution(str){
+//     let newWord = '';
+
+//     for (let i = 0; i < str.length; i++) {
+//         if(str[i] !== str[i].toUpperCase()){
+//             newWord += str[i]
+//         }else if(str[i] === str[i].toUpperCase()){
+//             newWord += ' ' + str[i]
+//         }
+
+//     }
+//     return newWord
+// }
+
+
+// function solution(string) {
+//     string = string.split('').map(function (el) {
+//       if (el === el.toUpperCase()) {
+//         el = ' ' + el
+//       }
+//       return el
+//     })
+//     return string.join('')
+//   }
+// console.log(solution('camelCasing'));
+// console.log(solution('identifier'));
+// console.log(solution('identifierSuadFuad'));
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+
+// function jaden(){
+//     let emtpyS = [];
+//     let words = this.toLowerCase().split('');
+//     for (let i = 0; i < words.length; i++) {
+//     let word = words[i];
+//     emtpyS.push(word[0].toUpperCase() + word.slice(1));        
+//     }
+//     return emtpyS.join(' ');
+// }
+// console.log(jaden('How can mirrors be real if our eyes arent rEal'));
+
+
+// Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+//   function isPangram(string){
+//         string = string.toLowerCase();
+//         let alfa = 'abcdefghijklmnopqrstuvwxyz';
+//        return alfa.split('').every((el, i) => {
+//             return string.indexOf(el) !== -1;
+//         })
+//     }
+        
+//           console.log(isPangram('The quick brown fox jumps over the lazy dog.'));
+//             console.log(isPangram('This is not a pangram.'));
 // ---------------------------------------------------
 // ---------------------------------------------------
 // https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
@@ -1219,20 +1317,21 @@
 
 // 36. Write a JavaScript function to create a specified number of elements with pre-filled numeric value array.
 
-const array_filled = (filed, value) => {
-    const arr1 = [];
-    for (let i = 0; i < filed; i++) {
-        arr1.push(value)
-    }
-    return arr1
-}
+// const array_filled = (filed, value) => {
+//     const arr1 = [];
+    
+//     for (let i = 0; i < filed; i++) {
+//     arr1.push(value)
+//     }
+//     return arr1
+// }
 
 
-// Test Data :
-console.log(array_filled(6, 0));
-// // [0, 0, 0, 0, 0, 0]
-console.log(array_filled(4, 11));
-// // [11, 11, 11, 11]
+// // Test Data :
+// console.log(array_filled(6, 0));
+// // // [0, 0, 0, 0, 0, 0]
+// console.log(array_filled(4, 11));
+// // // [11, 11, 11, 11]
 
 
 
