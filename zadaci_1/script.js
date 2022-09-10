@@ -1039,14 +1039,9 @@
 // }
 // console.log(sum);
 
-
-
-
 // function pairEl(num, targ){
 //     return num.filter((e,i)=> e)
 // }
-
-
 
 // ------------------------------
 // Cas vezbe --------------------
@@ -1060,7 +1055,7 @@
 
 // function capitalizeNames(arr){
 //     return arr.map((el) => el[0].toUpperCase() + el.slice(1).toLowerCase());
-    
+
 // }
 // console.log(capitalizeNames(['John', 'JACOB']));
 // 3
@@ -1083,7 +1078,6 @@
 // }
 // console.log(stringConcat([1,2,3]));
 // 6
-
 
 // ------------------------------
 // VEZBA
@@ -1165,7 +1159,7 @@
 
 // ---------------------------------------------------
 // ---------------------------------------------------
-
+// 4zadatak
 // function longestWord(str){
 //   str = str.split(' ');
 //   let maxLength = "";
@@ -1182,15 +1176,14 @@
 // Write a JavaScript function which accepts an argument and returns the type. Go to the editor
 // Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
 // Click me to see the solution
+// 4zadatak
 // function accepts(type){
 //     return (typeof type)
 // }
 // console.log(accepts(4));
 // ---------------------------------------------------
 // ---------------------------------------------------
-
-
-
+// 6zadatak
 // Write a JavaScript function to extract unique characters from a string. Go to the editor
 // Example string : "thequickbrownfoxjumpsoverthelazydog"
 // Expected Output : "thequickbrownfxjmpsvlazydg"
@@ -1202,23 +1195,20 @@
 //         uniq += str[i];
 //     };
 // }
-    
+
 // return uniq
 // }
 
 // console.log(uniqueS("thequickbrownfoxjumpsoverthelazydog"));
 
-
-
 // ---------------------------------------------------
-
+// 7zadatak
 // Complete the solution so that the function will break up camel casing, using a space between words.
 
 // Example
 // "camelCasing"  =>  "camel Casing"
 // "identifier"   =>  "identifier"
 // ""             =>  ""
-
 
 // function solution(str){
 //     let newWord = '';
@@ -1234,7 +1224,6 @@
 //     return newWord
 // }
 
-
 // function solution(string) {
 //     string = string.split('').map(function (el) {
 //       if (el === el.toUpperCase()) {
@@ -1249,23 +1238,23 @@
 // console.log(solution('identifierSuadFuad'));
 // ---------------------------------------------------
 // ---------------------------------------------------
-
+// 8zadatak
 
 // function jaden(){
 //     let emtpyS = [];
 //     let words = this.toLowerCase().split('');
 //     for (let i = 0; i < words.length; i++) {
 //     let word = words[i];
-//     emtpyS.push(word[0].toUpperCase() + word.slice(1));        
+//     emtpyS.push(word[0].toUpperCase() + word.slice(1));
 //     }
 //     return emtpyS.join(' ');
 // }
 // console.log(jaden('How can mirrors be real if our eyes arent rEal'));
 
-
 // Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 // ---------------------------------------------------
 // ---------------------------------------------------
+// 9zadatak
 
 //   function isPangram(string){
 //         string = string.toLowerCase();
@@ -1274,10 +1263,135 @@
 //             return string.indexOf(el) !== -1;
 //         })
 //     }
-        
+
 //           console.log(isPangram('The quick brown fox jumps over the lazy dog.'));
 //             console.log(isPangram('This is not a pangram.'));
 // ---------------------------------------------------
+
+// Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Go to the editor
+// Sample arguments : 'w3resource.com', 'o'
+// Expected output : 2
+// 11zadatak
+
+// function aceptTwo(str, val){
+//     let filed = 0
+//     for (let i = 0; i < str.length; i++) {
+//         if(str[i] === val){
+//             filed++;
+//         }
+
+//     }
+//     return filed;
+// }
+// console.log(aceptTwo('w3resorurcre.com', 'r'));
+
+// function aceptTwo(str, val){
+//     let filed = 0
+//     let noviS = str.split('');
+//     noviS.map((e) => {
+//         if(e === val){
+//             filed += 1
+//         }
+//     })
+//     return filed;
+// }
+// console.log(aceptTwo('w3resorurcre.com', 'r'));
+// ---------------------------------------------------
+// ---------------------------------------------------
+// 12zadatak
+
+// function rev(arr){
+// return arr.sort((a,b) => b - a)
+// }
+// console.log(rev([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]));
+//
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+// Write a JavaScript function that accept a list of country names as input and returns the longest country name as output. Go to the editor
+// Sample function : Longest_Country_Name(["Australia", "Germany", "United States of America"])
+// Expected output : "United States of America"
+
+// const mostCountry = (arr) => {
+//   return arr.reduce((prev, curr) => {
+//     if(prev.length > curr.length){
+//         return prev
+//     }else{
+//         return curr
+//     }
+//   });
+// };
+// console.log(mostCountry(["Australia", "Germany", "United States of America"]));
+
+// // ---------------------------------------------------
+// ---------------------------------------------------
+// 13zadatak
+
+// function anagrams(word, words) {
+//     return words.filter(function(item){
+//         return item.split('').sort().join('') === word.split('').sort().join('');
+
+//     });
+//   }
+// console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']));
+// ---------------------------------------------------
+// The marketing team is spending way too much time typing in hashtags.
+// Let's help them with our own Hashtag Generator!
+// Here's the deal:
+// 14zadatak
+
+// It must start with a hashtag (#).
+// All words must have their first letter capitalized.
+// If the final result is longer than 140 chars it must return false.
+// If the input or the result is an empty string it must return false.
+// Examples
+
+// const hashtags = (str => {
+//     if(str.length <= 0){
+//         return false
+//     }
+//     if(str[0] === ' '){
+//         return false
+//     }
+
+//     // let noviStr = '#' + str[0].toUpperCase() + str.slice(1).split(' ').join('');
+//     let noviStr = str.split(' ')
+//    const fuad = noviStr.map(arr => {
+//     return arr.charAt(0).toUpperCase() + arr.slice(1)
+//     }).join('');
+//     return fuad.length >= 140 ? false : '#' + fuad
+//     })
+// ---------------------------------------------------
+// ---------------------------------------------------
+// 14 zadatak
+
+// function hashtags(string) {
+//     if (string.trim() === '') return false;
+
+//     const stringWithCamelCase = string
+//       .split(' ')
+//       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//       .join('');
+
+//     // const stringWithHashtag = `#${stringWithCamelCase}`;
+
+//     return stringWithCamelCase.length > 140 ? false : '#' + stringWithCamelCase;
+//   }
+
+// console.log(hashtags(''));
+// console.log(hashtags(' '.repeat(200)));
+// console.log(hashtags('do We have A Hashtag'));
+// console.log(hashtags("a".repeat(139)));
+// console.log(hashtags("a".repeat(140)));
+// console.log(hashtags('Codewars'));
+// console.log(hashtags('Codewars is Nice'));
+// console.log(hashtags("code" + " ".repeat(140) + "wars"));
+
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+// ---------------------------------------------------
+// DOMAZI ZADATAK 30,31,36
 // ---------------------------------------------------
 // https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
 // 30 - 31 - 36
@@ -1312,26 +1426,105 @@
 
 // console.log(remove_array_element([2, 5, 9, 6], 5));
 
-
 // domaci zadatak 36
 
 // 36. Write a JavaScript function to create a specified number of elements with pre-filled numeric value array.
 
 // const array_filled = (filed, value) => {
 //     const arr1 = [];
-    
+
 //     for (let i = 0; i < filed; i++) {
 //     arr1.push(value)
 //     }
 //     return arr1
 // }
 
-
-// // Test Data :
 // console.log(array_filled(6, 0));
-// // // [0, 0, 0, 0, 0, 0]
 // console.log(array_filled(4, 11));
-// // // [11, 11, 11, 11]
+// ---------------------------------------------------
+// ---------------------------------------------------
+// ---------------------------------------------------
+// objekti zadaci conosle.log(object.keys(user))
 
+// 4
 
+// let library = [
+//     {
+//         author: 'Bill Gates',
+//         title: 'The Road Ahead',
+//         readingStatus: true
+//     },
+//     {
 
+//         author: 'Steve Jobs',
+//         title: 'Walter Isaascon',
+//         readingStatus: true
+//     },
+//     {
+//         author: 'Suzanne Collins',
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         readingStatus: false
+//     }
+
+// ];
+
+// library.forEach((e)=> {
+//     console.log(e.author);
+// })
+// console.log(library[0].readingStatus);
+
+const nizOb = [
+  { name: "Habanero Hillary", chickenwings: 5, hamburgers: 17, hotdogs: 11 },
+  { name: "Habanero Hillary", chickenwings: 20, hamburgers: 4, hotdogs: 11 },
+];
+
+const scoreTable = {
+  chickenwings: 5,
+  hamburgers: 3,
+  hotdogs: 2,
+};
+
+// let score = 0;
+// nizOb.forEach(item => {
+// score = Object.keys(item).map((key)=>{
+
+//     if(scoreTable[key]) {
+// score += scoreTable[key] * item[key]
+//  }
+//  return score
+// })
+// })
+
+// console.log(score);
+
+const arr = [];
+nizOb.forEach((item) => {
+  let scores = 0;
+  let score = Object.keys(item).map((key) => {
+    console.log(item[key]);
+    if (scoreTable[key]) scores += scoreTable[key] * item[key];
+
+    return scores;
+  }, 0);
+  arr.push({ name: item.name, scores });
+});
+
+console.log(arr);
+
+// const resenje = nizOb.map((el) => {
+
+//     return  {name: el.name, score: el.chickenwings * 5 + el.hamburgers * 3 + el.hotdogs * 2}
+//   })
+
+// const resenje = nizOb.map((el) => {
+//   return  {name: el.name, score: el.chickenwings * 5 + el.hamburgers * 3 + el.hotdogs * 2}
+// })
+// console.log(resenje);
+// function scoreboard(whoAteWhat){
+//     return whoAteWhat.map(obj => ({
+//       name: obj.name,
+//       score: obj.chickenwings * 5 + obj.hamburgers * 3 + obj.hotdogs * 2,
+//     })).sort((a, b) => b.score - a.score || a.name > b.name);
+//   }
+
+//   console.log(scoreboard(nizOb));
