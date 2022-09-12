@@ -1528,3 +1528,53 @@ console.log(arr);
 //   }
 
 //   console.log(scoreboard(nizOb));
+
+
+// Dogy DayCare domaci zadatak 
+
+const dog = [{
+  name: 'Spot',
+  age: 23,
+  labarator: 'lab',
+  vaccinated: true,
+  wormed: false
+}]
+
+
+// const vakcinacija = dog.forEach((el)=>{
+// if(el.vaccinated && el.wormed){
+//   return `${el.name} can be accepted`;
+// // }else if(el.vaccinated || el.wormed){
+// //   return `${el.name} can only be accepted by itself`
+// // }else{
+// //   return `${el.name} can not be accepted`
+// }
+// return vakcinacija
+// })
+// console.log(vakcinacija);
+
+// ---
+// let novi = '';
+//  dog.forEach((el)=>{
+//   if(el.vaccinated && el.wormed){
+//     return novi = `${el.name} can be accepted`;
+//    }else if(el.vaccinated || el.wormed){
+//      return novi =`${el.name} can only be accepted by itself`
+//    }else{
+//      return novi = `${el.name} can not be accepted`
+//   }
+  
+//   })
+//   console.log(novi);
+  
+
+//--
+
+// Dog.prototype.checkDog = function() {
+//   if (this.vaccinated && this.wormed) return `${ this.name } can be accepted`;
+//   if (this.vaccinated || this.wormed) return `${ this.name } can only be accepted by itself`;
+//   return `${ this.name } can not be accepted`;
+// };
+// var spot = new Dog("Spot", 5, "Labrador", true, false);
+
+
