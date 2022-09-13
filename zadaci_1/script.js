@@ -1473,16 +1473,16 @@
 // })
 // console.log(library[0].readingStatus);
 
-const nizOb = [
-  { name: "Habanero Hillary", chickenwings: 5, hamburgers: 17, hotdogs: 11 },
-  { name: "Habanero Hillary", chickenwings: 20, hamburgers: 4, hotdogs: 11 },
-];
+// const nizOb = [
+//   { name: "Habanero Hillary", chickenwings: 5, hamburgers: 17, hotdogs: 11 },
+//   { name: "Habanero Hillary", chickenwings: 20, hamburgers: 4, hotdogs: 11 },
+// ];
 
-const scoreTable = {
-  chickenwings: 5,
-  hamburgers: 3,
-  hotdogs: 2,
-};
+// const scoreTable = {
+//   chickenwings: 5,
+//   hamburgers: 3,
+//   hotdogs: 2,
+// };
 
 // let score = 0;
 // nizOb.forEach(item => {
@@ -1497,28 +1497,29 @@ const scoreTable = {
 
 // console.log(score);
 
-const arr = [];
-nizOb.forEach((item) => {
-  let scores = 0;
-  let score = Object.keys(item).map((key) => {
-    console.log(item[key]);
-    if (scoreTable[key]) scores += scoreTable[key] * item[key];
+// const arr = [];
+// nizOb.forEach((item) => {
+//   let scores = 0;
+//   let score = Object.keys(item).map((key) => {
+//     console.log(item[key]);
+//     if (scoreTable[key]) scores += scoreTable[key] * item[key];
 
-    return scores;
-  }, 0);
-  arr.push({ name: item.name, scores });
-});
+//     return scores;
+//   }, 0);
+//   arr.push({ name: item.name, scores });
+// });
 
-console.log(arr);
+// console.log(arr);
 
-// const resenje = nizOb.map((el) => {
+// // const resenje = nizOb.map((el) => {
 
-//     return  {name: el.name, score: el.chickenwings * 5 + el.hamburgers * 3 + el.hotdogs * 2}
-//   })
+// //     return  {name: el.name, score: el.chickenwings * 5 + el.hamburgers * 3 + el.hotdogs * 2}
+// //   })
 
 // const resenje = nizOb.map((el) => {
 //   return  {name: el.name, score: el.chickenwings * 5 + el.hamburgers * 3 + el.hotdogs * 2}
 // })
+// console.log(resenje);
 // console.log(resenje);
 // function scoreboard(whoAteWhat){
 //     return whoAteWhat.map(obj => ({
@@ -1529,17 +1530,15 @@ console.log(arr);
 
 //   console.log(scoreboard(nizOb));
 
+// Dogy DayCare domaci zadatak
 
-// Dogy DayCare domaci zadatak 
-
-const dog = [{
-  name: 'Spot',
-  age: 23,
-  labarator: 'lab',
-  vaccinated: true,
-  wormed: false
-}]
-
+// const dog = [{
+//   name: 'Spot',
+//   age: 23,
+//   labarator: 'lab',
+//   vaccinated: true,
+//   wormed: false
+// }]
 
 // const vakcinacija = dog.forEach((el)=>{
 // if(el.vaccinated && el.wormed){
@@ -1563,10 +1562,9 @@ const dog = [{
 //    }else{
 //      return novi = `${el.name} can not be accepted`
 //   }
-  
+
 //   })
 //   console.log(novi);
-  
 
 //--
 
@@ -1575,6 +1573,43 @@ const dog = [{
 //   if (this.vaccinated || this.wormed) return `${ this.name } can only be accepted by itself`;
 //   return `${ this.name } can not be accepted`;
 // };
-// var spot = new Dog("Spot", 5, "Labrador", true, false);
 
+// ------------------------------------------------------
+// ------------------------------------------------------
+// user2 = {...user, location: {...user.location}};
+word = "abracadabra";
+result = {};
+console.log(word.split(""));
 
+wordArr = word.split("");
+
+wordArr.forEach((el) => {
+  if (result[el]) {
+    result[el] += 1;
+  } else {
+    result[el] = 1;
+  }
+});
+console.log(result);
+console.log(Object.entries(result));
+// ------------------------------------------------------
+// ------------------------------------------------------
+// programiz.com/javascrpt/pbject
+
+// function objektiIsti(fristOb, secondObj){
+
+//   // fristOb.forEach((el)=>{
+
+//   // })
+//   Object.keys(fristOb).forEach((el)=>{
+//   }).
+//   // if(Object.keys(fristOb) === Object.keys(secondObj)) return true
+//   // else return false
+// }
+
+// medium.com object ket entries values 
+const data1 = {a: 1, b: 1};
+const data2 = {a: 1, b: 1};
+const data3 = {a: 1, b: 2};
+
+console.log(objektiIsti(data1, data1));
