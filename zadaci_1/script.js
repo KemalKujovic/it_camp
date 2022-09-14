@@ -1613,3 +1613,101 @@ const data2 = {a: 1, b: 1};
 const data3 = {a: 1, b: 2};
 
 console.log(objektiIsti(data1, data1));
+
+
+// ---- objekti 
+// scoreboard = players.map((player) => {
+//   let playerpoints = 0;
+//   Object.keys(points).forEach((key) => {
+//     playerpoints += player[key] * points[key];
+//   });
+
+//   return { name: player.name, score: playerpoints };
+// });
+
+// console.log(scoreboard);
+
+// user = {
+//   lastName: "dupljak",
+//   password: "sfira123",
+//   location: {
+//     address: "NP",
+//     country: "SRB",
+//   },
+//   name: "dzemil",
+//   isLive: true,
+// };
+
+// user2 = {
+//   ...user,
+//   location: {
+//     ...user.location,
+//   },
+// };
+
+// user.lastName = "asdsadasd";
+// user.location.address = "NY";
+
+// // console.log(user);
+// // console.log("======================================");
+// // console.log(user2);
+
+// word = "abracadabra";
+
+// word = word.split("");
+
+// result = {};
+
+// word.forEach((letter) => {
+//   if (result[letter]) {
+//     result[letter] += 1;
+//   } else {
+//     result[letter] = 1;
+//   }
+// });
+
+// console.log(result);
+// console.log(Object.entries(result));
+
+// ["a", "b", "c", "d"];
+
+// a = {
+//   0: "a",
+//   1: "b",
+//   2: "c",
+//   3: "d",
+// };
+
+// user = ["Emir", 180, "Demir", 70, 2606005783944];
+
+// user = {
+//   name: "Emir",
+//   lastname: "Demir",
+//   height: 180,
+//   weight: 70,
+//   jmbg: 2606005783944,
+//   phoneNum: {
+//     personal: 123,
+//     home: 456,
+//     company: 444,
+//   },
+// };
+
+// console.log(user.name);
+
+// arr1 = { a: 1 };
+// arr2 = { a: 1 };
+// console.log(arr1 === arr2);
+
+// const data = { a: 1, b: 2 };
+// const data2 = { a: 1, b: 2 };
+
+// // console.log(Object.keys(data));
+
+// res = Object.keys(data).every((key) => data[key] === data2[key]);
+
+// if (Object.keys(data).length === Object.keys(data2).length && res) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
