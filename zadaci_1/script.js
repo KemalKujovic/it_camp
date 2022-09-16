@@ -1577,22 +1577,22 @@
 // ------------------------------------------------------
 // ------------------------------------------------------
 // user2 = {...user, location: {...user.location}};
-word = "abracadabra";
-result = {};
-console.log(word.split(""));
+// word = "abracadabra";
+// result = {};
+// console.log(word.split(""));
 
-wordArr = word.split("");
+// wordArr = word.split("");
 
-wordArr.forEach((el) => {
-  if (result[el]) {
-    result[el] += 1;
-  } else {
-    result[el] = 1;
-  }
-});
-console.log(result);
-console.log(Object.entries(result));
-// ------------------------------------------------------
+// wordArr.forEach((el) => {
+//   if (result[el]) {
+//     result[el] += 1;
+//   } else {
+//     result[el] = 1;
+//   }
+// });
+// console.log(result);
+// console.log(Object.entries(result));
+// // ------------------------------------------------------
 // ------------------------------------------------------
 // programiz.com/javascrpt/pbject
 
@@ -1607,15 +1607,14 @@ console.log(Object.entries(result));
 //   // else return false
 // }
 
-// medium.com object ket entries values 
-const data1 = {a: 1, b: 1};
-const data2 = {a: 1, b: 1};
-const data3 = {a: 1, b: 2};
+// medium.com object ket entries values
+// const data1 = {a: 1, b: 1};
+// const data2 = {a: 1, b: 1};
+// const data3 = {a: 1, b: 2};
 
-console.log(objektiIsti(data1, data1));
+// console.log(objektiIsti(data1, data1));
 
-
-// ---- objekti 
+// ---- objekti
 // scoreboard = players.map((player) => {
 //   let playerpoints = 0;
 //   Object.keys(points).forEach((key) => {
@@ -1702,12 +1701,105 @@ console.log(objektiIsti(data1, data1));
 // const data = { a: 1, b: 2 };
 // const data2 = { a: 1, b: 2 };
 
-// // console.log(Object.keys(data));
+// // // console.log(Object.keys(data));
 
-// res = Object.keys(data).every((key) => data[key] === data2[key]);
-
+// res = Object.keys(data).every((key) => {
+//   data[key] === data2[key]
+// });
+// console.log(res);
 // if (Object.keys(data).length === Object.keys(data2).length && res) {
 //   console.log(true);
 // } else {
 //   console.log(false);
 // }
+// ============================================================//
+// funkcija cas ==============================================//
+
+mojaVar = 10;
+
+function func1() {
+  console.log("funckija radi");
+  console.log("funckija radi");
+  console.log("funckija radi");
+  console.log("funckija radi");
+  console.log("funckija radi");
+  console.log(mojaVar);
+}
+
+func1();
+
+// export.func1 = func1;
+// const {func1} = require('/drugi_file');
+
+// function evenOdd(num){
+//   if(num % 2 === 0){
+//     return 'paran'
+//   }else{
+//     return 'neparan'
+//   }
+// }
+
+// console.log(evenOdd(223));
+
+
+// function func3(a, b){
+//   return a + b;
+// }
+
+
+// for (let i = 0; i < 3; i++) {
+
+//   console.log(func3(3,5));
+
+// }
+
+
+
+// ============================================================//
+// ============================================================//
+// === zdaci pracic////
+
+// var countSheep = function (num){
+//   //your code here
+//   result = ''
+//   for(let i =1; i<=num; i++){
+//     result += i + ' sheep..'
+//   }
+//   return result
+
+// }
+
+// console.log(countSheep(3));
+
+// function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
+//   // your code
+//   const godine = [age1, age2, age3, age4, age5, age6, age7, age8];
+
+//   const novo = godine.reduce((acc, curr) => acc + curr ** 2, 0)
+//   return Math.floor(novo ** 0.5 / 2);
+// }
+
+// console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45));
+// function last(x){
+
+// return x.split(' ').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+// }
+
+// console.log(last('take me to semynak'));
+// function scrollingText(text){
+// const word = text.toUpperCase();
+
+// return [...word].map((el, i)=> word.slice(i) + word.slice(0, i))
+// }
+
+// console.log(scrollingText("abc"));
+// // scrollingText("abc"), ["ABC","BCA","CAB"])
+// // // // === zdaci pracic////
+
+// function spacify(str) {
+
+//   return str.split('').join(' ');
+//   // return
+// }
+
+// console.log(spacify('hello world'));
