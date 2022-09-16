@@ -1715,18 +1715,18 @@
 // ============================================================//
 // funkcija cas ==============================================//
 
-mojaVar = 10;
+// mojaVar = 10;
 
-function func1() {
-  console.log("funckija radi");
-  console.log("funckija radi");
-  console.log("funckija radi");
-  console.log("funckija radi");
-  console.log("funckija radi");
-  console.log(mojaVar);
-}
+// function func1() {
+//   console.log("funckija radi");
+//   console.log("funckija radi");
+//   console.log("funckija radi");
+//   console.log("funckija radi");
+//   console.log("funckija radi");
+//   console.log(mojaVar);
+// }
 
-func1();
+// func1();
 
 // export.func1 = func1;
 // const {func1} = require('/drugi_file');
@@ -1741,11 +1741,9 @@ func1();
 
 // console.log(evenOdd(223));
 
-
 // function func3(a, b){
 //   return a + b;
 // }
-
 
 // for (let i = 0; i < 3; i++) {
 
@@ -1753,7 +1751,18 @@ func1();
 
 // }
 
+// domaci cas funckije
+// deklarisati funkcije za upis i ispis jednog niza
 
+// function upisArr() {
+//   let prazan = [];
+//   for (let i = 1; i <= 5; i++) {
+//     unos = prompt(`Unesite vas ${i} element`);
+//     prazan.push(unos);
+//   }
+//   return prazan;
+// }
+// console.log(upisArr());
 
 // ============================================================//
 // ============================================================//
