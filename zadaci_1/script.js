@@ -1999,6 +1999,19 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 // function modifyMultiply(str, i, n) {
 //   console.log(Array(n).fill(str.split(" ")[i]).join("-"));
 //   return Array(n).fill(str.split(" ")[i]).join("-");
-// }
-
-// console.log(modifyMultiply("This is a string", 3, 5));
+// https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
+console.clear();
+function findAverage(array) {
+  // return array.reduce((prev, curr) => prev + curr) / array.length;
+  if (array.length === 0) {
+    return 0;
+  }
+  let sum = 0;
+  array.reduce((prev, curr) => {
+    return (sum = prev + curr);
+  });
+  return sum / array.length;
+}
+console.log(findAverage([1, 1, 1]));
+console.log(findAverage([1, 2, 3, 4]));
+console.log(findAverage([]));
