@@ -1756,15 +1756,16 @@
 // // domaci cas funckije
 // // deklarisati funkcije za upis i ispis jednog niza
 // // ============================================================//
-// // function upisArr() {
-// //   let prazan = [];
-// //   for (let i = 1; i <= 5; i++) {
-// //     unos = prompt(`Unesite vas ${i} element`);
-// //     prazan.push(unos);
-// //   }
-// //   return prazan;
-// // }
-// // console.log(upisArr());
+// function upisArr() {
+//   let prazan = [];
+//     for (let i = 1; i <= 5; i++) {
+//     unos = prompt(`Unesite vas ${i} element`);
+//     prazan.push(unos);
+//   }
+//   return prazan;
+// }
+// console.log(upisArr());
+
 
 // // ============================================================//
 // // ============================================================//
@@ -1843,19 +1844,76 @@
 // ==================
 // Write a JavaScript function that accept a list of country names as input and returns the longest country name as output.
 
-function Longest_Country_Name(arr) {
-  let arr2 = arr.reduce((prev, curr) => {
-    if (prev.length > curr.length) {
-      return prev;
-    } else {
-      return curr;
-    }
-  });
-  return arr2;
-}
+// function Longest_Country_Name(arr) {
+//   let arr2 = arr.reduce((prev, curr) => {
+//     if (prev.length > curr.length) {
+//       return prev;
+//     } else {
+//       return curr;
+//     }
+//   });
+//   return arr2;
+// }
 
-console.log(
-  Longest_Country_Name(["Australia", "Germany", "United States of America"])
-);
+// console.log(
+//   Longest_Country_Name(["Australia", "Germany", "United States of America"])
+// );
 // ==================
 // ==================
+
+// Funckije cas 2 
+// ----------------------------
+
+// function removeDupl(arr){
+// return arr.filter((el, i) => arr.indexOf(el) === i) 
+// }
+
+// console.log(removeDupl([2,2,5]));
+// function isDivisible(n, x,y){
+//     return n % x === 0 && n % y === 0
+// }
+
+// console.log(isDivisible(12,3,4));
+// console.log(isDivisible(12,3,7));
+// function fakeBin(num){
+//     const arr = num.split('');
+    
+//     const jedan = arr.map((el) => el >= 5 ? '1' : '0')
+//     return jedan.join('')
+// }
+
+// console.log(fakeBin('45385593107843568'));
+
+// -------------------------------
+// function reverseWords(str){
+// const str2 = str.split(' ');
+// return str2.reverse().join(' ');
+// // for (rec of arr2) {
+// //     arr2.unshift(rec)
+// // }
+// // return arr.join(' ');
+// }
+
+// console.log(reverseWords('hello world!'));
+// console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
+// leakcode
+
+// function divisiblyBy(numbers, devisior){
+// const novi = numbers.filter((el) => el % devisior === 0)
+// return novi
+// }
+// console.log(divisiblyBy([1,2,3,4,5,6], 2));
+
+// function boolToWord(bool){
+// if(bool) return 'Yes'
+// return 'No'
+// }
+
+// console.log(boolToWord(true));
+// console.log(boolToWord(false));
+
+
+
+
+// funnkcije cas kraj
+// ----------------------------
