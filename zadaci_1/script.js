@@ -1766,7 +1766,6 @@
 // }
 // console.log(upisArr());
 
-
 // // ============================================================//
 // // ============================================================//
 // // === zdaci pracic////
@@ -1861,11 +1860,11 @@
 // ==================
 // ==================
 
-// Funckije cas 2 
+// Funckije cas 2
 // ----------------------------
 
 // function removeDupl(arr){
-// return arr.filter((el, i) => arr.indexOf(el) === i) 
+// return arr.filter((el, i) => arr.indexOf(el) === i)
 // }
 
 // console.log(removeDupl([2,2,5]));
@@ -1877,7 +1876,7 @@
 // console.log(isDivisible(12,3,7));
 // function fakeBin(num){
 //     const arr = num.split('');
-    
+
 //     const jedan = arr.map((el) => el >= 5 ? '1' : '0')
 //     return jedan.join('')
 // }
@@ -1912,8 +1911,94 @@
 // console.log(boolToWord(true));
 // console.log(boolToWord(false));
 
-
-
-
 // funnkcije cas kraj
 // ----------------------------
+// ---------------------------
+// objekti
+// ---------------------------
+
+const noviUser = {
+  ime: "Kemal",
+  godiste: 1999,
+  email: "kemalkujovic1111@gmail.com",
+  zaispis: function () {
+    console.log("radi");
+  },
+  interesovanja: [
+    { naziv: "Pecanje", stepen: "7" },
+    { naziv: "Slikarstvo", stepen: "4" },
+    { naziv: "Programerstvo", stepen: "10" },
+  ],
+};
+
+console.log(noviUser.interesovanja);
+
+for (let i = 0; i < noviUser.interesovanja.length; i++) {
+  console.log(i);
+  if (noviUser.interesovanja[i].stepen > 5) {
+    console.log(noviUser.interesovanja[i].naziv, "Ima veci od 5");
+  }
+}
+
+// noviUser.forEach((element, i) => {
+//   console.log(
+//     element.interesovanja.filter((el, i) => {
+//       return el.stepen > 5;
+//     })
+//   );
+// });
+
+// const objekat1 = {
+//   ime: "Kemal",
+//   god: 99,
+//   godiste: 1999,
+// };
+// console.clear();
+// for (let kljuc in objekat1) {
+//   console.log(kljuc, ":", objekat1[kljuc]);
+// }
+
+// codewars
+// Multiply Word in String
+// console.clear();
+// function modifyMultiply(str, loc, num) {
+//   let arr = str.split(" ");
+//   let dodati = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (loc === i) {
+//       for (let j = 0; j < num; j++) {
+//         dodati.push(arr[i]);
+//       }
+//     }
+//   }
+//   return dodati.join("-");
+// }
+
+// console.log(modifyMultiply("This is a string", 3, 5));
+
+// codewarrs
+// Multiply Word in string
+// console.clear();
+// function modifyMultiply(str, loc, num) {
+//   let arr = str.split(" ");
+//   let res = [];
+//   let strres = "";
+//   for (i = 0; i < num; i++) {
+//     console.log(arr[loc]);
+//     res.push(arr[loc]);
+//     strres = res.join("-");
+//   }
+//   return strres;
+// }
+
+// console.log(modifyMultiply("This is a string", 3, 5));
+
+// codewars
+// Multiply Word in string
+// console.clear();
+// function modifyMultiply(str, i, n) {
+//   console.log(Array(n).fill(str.split(" ")[i]).join("-"));
+//   return Array(n).fill(str.split(" ")[i]).join("-");
+// }
+
+// console.log(modifyMultiply("This is a string", 3, 5));
