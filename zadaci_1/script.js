@@ -2000,18 +2000,101 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 //   console.log(Array(n).fill(str.split(" ")[i]).join("-"));
 //   return Array(n).fill(str.split(" ")[i]).join("-");
 // https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
+// console.clear();
+// function findAverage(array) {
+//   // return array.reduce((prev, curr) => prev + curr) / array.length;
+//   if (array.length === 0) {
+//     return 0;
+//   }
+//   let sum = 0;
+//   array.reduce((prev, curr) => {
+//     return (sum = prev + curr);
+//   });
+//   return sum / array.length;
+// }
+// console.log(findAverage([1, 1, 1]));
+// console.log(findAverage([1, 2, 3, 4]));
+// console.log(findAverage([]));
+// https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript
+// console.clear();
+// function likes(names) {
+//   if (names.length === 0) {
+//     return "no one likes this";
+//   }
+//   let novi = names.join("");
+//   if (names.length === 1) {
+//     return novi + " likes this";
+//   }
+//   if (names.length === 2) {
+//     return names.join(" and ") + " likes this";
+//   }
+//   if (names.length === 3) {
+//     return names[0] + ", " + names.slice(1).join(" and ") + " likes this";
+//   }
+//   if (names.length > 3) {
+//     return `${names[0]}, ${names.slice(1, 2)} and ${
+//       names.length - 2
+//     } others like this`;
+//   }
+// }
+// // likes(['Alex', 'Jacob', 'Mark', 'Max']), 'Alex, Jacob and 2 others like this'
+// console.log(likes([]));
+// console.log(likes(["Kemal"]));
+// console.log(likes(["Kemal", "Fuad"]));
+// console.log(likes(["Kemal", "Fuad", "Suad"]));
+// console.log(likes(["Kemal", "Fuad", "Suad", "petar"]));
+// console.log(likes(["Sukic", "Kemal", "Fuad", "Suad", "petar"]));
 console.clear();
-function findAverage(array) {
-  // return array.reduce((prev, curr) => prev + curr) / array.length;
-  if (array.length === 0) {
-    return 0;
-  }
-  let sum = 0;
-  array.reduce((prev, curr) => {
-    return (sum = prev + curr);
-  });
-  return sum / array.length;
-}
-console.log(findAverage([1, 1, 1]));
-console.log(findAverage([1, 2, 3, 4]));
-console.log(findAverage([]));
+// codewards
+// Stanton measure
+// function stantonMeasure(arr) {
+//   let count1 = 0;
+//   let count2 = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 1) {
+//       count1++;
+//     }
+//   }
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] === count1) {
+//       count2++;
+//     }
+//   }
+//   return count2;
+// }
+
+// console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2]));
+// codewars
+// Simple Fun #176: Reverse Letter
+// function reverseLetter(str) {
+//   //coding and coding..
+//   let rec = "";
+
+//   for (let u = 0; u < str.length; u++) {
+//     if (str[u] !== "?") {
+//       rec += str[u];
+//     }
+//   }
+//   return rec
+//     .split("")
+//     .reverse()
+//     .join("")
+//     .replace(/[^a-z]/gi, "");
+// }
+
+// console.log(reverseLetter("kemal"));
+// console.log(reverseLetter("ke3m?al"));
+
+// codewars
+// function abbrevName(name) {
+//   // code away
+//   return name
+//     .split(" ")
+
+//     .map((el) => el[0])
+//     .join(".")
+//     .toUpperCase();
+// }
+
+// console.log(abbrevName("Kemal Kujovic"));
+// console.log(abbrevName("kemal Kujovic"));
