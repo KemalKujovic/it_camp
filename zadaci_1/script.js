@@ -2097,4 +2097,167 @@ console.clear();
 // }
 
 // console.log(abbrevName("Kemal Kujovic"));
-// console.log(abbrevName("kemal Kujovic"));
+// console.log(abbrevName("kemal Kujovic
+
+// function sum() {
+//   let suma = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     suma += arguments[i];
+//   }
+//   return suma;
+// }
+
+// console.log(sum(1, 1, 1, 1, 1, 1, 1, 1));
+
+// codewars
+// Make acronym
+// function toAcronym(inp) {
+// return name
+//   .join()
+//   .split(" ")
+//   .map((el) => el[0])
+//   .join("")
+//   .toUpperCase();
+//   return inp
+//     .split(" ")
+//     .map((el) => el[0].toUpperCase())
+//     .join("");
+// }
+
+// console.log(toAcronym("Code Wars"));
+
+// codewars
+// V A P O R C O D E
+// function vaporcode(string) {
+//   console.log(string.split(" ").join("").toUpperCase().split("").join("  "));
+// }
+
+// console.log(vaporcode("Lets go to movies"));
+// console.log(vaporcode("Lets isn't to movies"));
+
+// codewars
+// Currying functions: multiply all elements in an array
+// function multiply(arr) {
+//   return function (num) {
+//     return arr.map((el) => el * num);
+//   };
+// }
+
+// console.log(multiply([1, 2, 3])(2));
+
+// function sabiranje(a) {
+//   return function (b) {
+//     return a + b;
+//   };
+// }
+// console.log(sabiranje(2)(5));
+
+// codewars
+// Mexican Wave
+console.clear();
+
+// function wave(str) {
+//   let arr = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//       continue;
+//     } else {
+//       arr.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1));
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(wave("hello"));
+// console.log(wave("two words"));
+// console.log(wave(" gap "));
+
+// codewars
+// Array.diff
+// function arrayDiff(arr1, arr2) {
+//   return arr1.filter((el) => {
+//     return !arr2.includes(el);
+//   });
+// }
+
+// console.log(arrayDiff([1, 2], [1]));
+
+// codewars
+// Duplicate Encoder
+// function duplicateEncode(word) {
+//   const arr = word.toLowerCase().split("");
+//   const novi = arr.map((el, i, array) => {
+//     if (array.indexOf(el) === array.lastIndexOf(el)) {
+//       return "(";
+//     } else {
+//       return ")";
+//     }
+//   });
+
+//   return novi.join("");
+// }
+// console.log(duplicateEncode("din"));
+// console.log(duplicateEncode("recede"));
+// console.log(duplicateEncode("success"));
+
+// codewars
+// Tribonacci Sequence
+function tribonacci(arr, num) {
+  let arr2 = [];
+  for (let i = 0; i < num; i++) {
+    if (i < 3) {
+      arr2.push(arr[i]);
+    } else {
+      arr2.push(arr2[i - 1] + arr2[i - 2] + arr2[i - 3]);
+    }
+  }
+  return arr2;
+}
+
+console.log(tribonacci([1, 1, 1], 10));
+console.log(tribonacci([0, 0, 1], 10));
+console.clear();
+// codewars
+// Vowel Count
+
+// function getCount(str) {
+//   let brojac = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] === "a" ||
+//       str[i] === "e" ||
+//       str[i] === "i" ||
+//       str[i] === "u" ||
+//       str[i] === "o"
+//     ) {
+//       brojac += 1;
+//     }
+//   }
+//   return brojac;
+// }
+
+// console.log(getCount("abracadabra"));
+
+// codewars
+// Highest and Lowest
+// function highAndLow(numbers) {
+//   let broj = numbers.split(" ");
+//   let minBroj = Number(broj[0]);
+//   let maxBroj = Number(broj[0]);
+//   for (let i = 0; i < broj.length; i++) {
+//     if (Number(broj[i]) > maxBroj) {
+//       maxBroj = broj[i];
+//     } else if (Number(broj[i]) < minBroj) {
+//       minBroj = broj[i];
+//     }
+//   }
+//   return `${maxBroj} ${minBroj}`;
+// }
+
+// // function highAndLow(numbers){
+// //   var arr = numbers.split(' ').sort(function(a, b) { return a - b });
+// //   return arr[arr.length -1] + ' ' + arr[0];
+// // }
+// console.log(highAndLow("1 2 3 4 5"));
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
