@@ -2156,7 +2156,7 @@ console.clear();
 
 // codewars
 // Mexican Wave
-console.clear();
+// console.clear();
 
 // function wave(str) {
 //   let arr = [];
@@ -2205,22 +2205,22 @@ console.clear();
 
 // codewars
 // Tribonacci Sequence
-function tribonacci(arr, num) {
-  let arr2 = [];
-  for (let i = 0; i < num; i++) {
-    if (i < 3) {
-      arr2.push(arr[i]);
-    } else {
-      arr2.push(arr2[i - 1] + arr2[i - 2] + arr2[i - 3]);
-    }
-  }
-  return arr2;
-}
+// function tribonacci(arr, num) {
+//   let arr2 = [];
+//   for (let i = 0; i < num; i++) {
+//     if (i < 3) {
+//       arr2.push(arr[i]);
+//     } else {
+//       arr2.push(arr2[i - 1] + arr2[i - 2] + arr2[i - 3]);
+//     }
+//   }
+//   return arr2;
+// }
 
-console.log(tribonacci([1, 1, 1], 10));
-console.log(tribonacci([0, 0, 1], 10));
-console.clear();
-// codewars
+// console.log(tribonacci([1, 1, 1], 10));
+// console.log(tribonacci([0, 0, 1], 10));
+// console.clear();
+// // codewars
 // Vowel Count
 
 // function getCount(str) {
@@ -2335,7 +2335,7 @@ console.clear();
 // }
 
 // console.log(switcheroo("acb"));
-console.clear();
+// console.clear();
 
 // codewars
 // Likes or Dislakes
@@ -2395,31 +2395,31 @@ console.clear();
 // codewars
 // Find the odd int
 
-// function findOdd(num) {
-//   let result = 0;
-//   let obj = {};
-//   // prolazimo kroz niz
-//   for (let i = 0; i < num.length; i++) {
-//     // ako imamo vec taj broj dodajemo mu jedan
-//     if (obj[num[i]]) {
-//       obj[num[i]]++;
-//       // ako nemamo broj dodajemo u objekat i dajemo mu value jedan.
-//     } else {
-//       obj[num[i]] = 1;
-//     }
-//   }
-//   // prolazimo kroz objekat
-//   for (let key in obj) {
-//     // uzimamo vrednost od keyova i pitamo dali je modul od 2 jedan jedan tj. neparan.
-//     console.log(key, obj);
-//     if (obj[key] % 2 === 1) {
-//       // ako jeste dodajemo mu u result taj key
-//       result = key;
-//     }
-//   }
-//   // jer svaki key je string moramo vratiti number
-//   return Number(result);
-// }
+function findOdd(num) {
+  let result = 0;
+  let obj = {};
+  // prolazimo kroz niz
+  for (let i = 0; i < num.length; i++) {
+    // ako imamo vec taj broj dodajemo mu jedan
+    if (obj[num[i]]) {
+      obj[num[i]]++;
+      // ako nemamo broj dodajemo u objekat i dajemo mu value jedan.
+    } else {
+      obj[num[i]] = 1;
+    }
+  }
+  // prolazimo kroz objekat
+  for (let key in obj) {
+    // uzimamo vrednost od keyova i pitamo dali je modul od 2 jedan jedan tj. neparan.
+    console.log(key, obj);
+    if (obj[key] % 2 === 1) {
+      // ako jeste dodajemo mu u result taj key
+      result = key;
+    }
+  }
+  // jer svaki key je string moramo vratiti number
+  return Number(result);
+}
 
 // console.log(findOdd([1, 1, 2]));
 // // console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
@@ -2466,3 +2466,197 @@ console.clear();
 // }
 
 // console.log(descendingOrder(15));
+
+// codewars
+// Mumbling
+// function accum(str) {
+//   // your code
+//   str = str.split("");
+//   let arr = [];
+//   for (let i = 0; i < str.length; i++) {
+//     let result = str[i].toUpperCase();
+//     for (let j = 0; j < i; j++) {
+//       result += str[i].toLowerCase();
+//     }
+//     arr.push(result);
+//   }
+//   return arr.join("-");
+// }
+
+// console.log(accum("ZpglnRxqenU"));
+
+// codewars
+// Mumbling
+// 2 nacin sa codewarsa
+
+// function accum(str) {
+//   return str
+//     .split("")
+//     .map((el, index) => el.toUpperCase() + el.toLowerCase().repeat(index))
+//     .join("-");
+// }
+// console.log(accum("acab"));
+
+// codewars
+// List Filtering
+// function filter_list(list) {
+//   // Return a new array with the strings filtered out
+
+//   const noviArr = list.filter((el) => {
+//     return typeof el == "number";
+//   });
+//   return noviArr;
+// }
+// return l.filter(e => Number.isInteger(e));
+// console.log(filter_list([1, 2, "a", "b", 3]));
+
+// codewars
+// Isograms
+// function isIsogram(str) {
+//   let obj = {};
+//   str = str.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = 0; j < i; j++) {
+//       if (str[i] === str[j]) {
+//         return false;
+//       }
+//     }
+//   }
+//   return true;
+// }
+// console.log(isIsogram("aba"));
+
+// codewars
+// Isograms
+// 2 nacin sa objektom
+// function isIsogram(str) {
+//   let obj = {};
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (obj[str[i]]) {
+//       return false;
+//     } else {
+//       obj[str[i]] = true;
+//     }
+//   }
+//   return true;
+// }
+// console.log(isIsogram("aba"));
+
+// codewars
+// Exes and Ohs
+// function XO(str) {
+//   let numX = "";
+//   let numO = "";
+//   str = str.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === "x") {
+//       numX += str[i];
+//     } else if (str[i] === "o") {
+//       numO += str[i];
+//     }
+//   }
+//   return numX.length === numO.length;
+// }
+// 2 nacin
+// function XO(str) {
+//   console.log(str.toLowerCase().split("x").length);
+//   console.log(str.toLowerCase().split("o").length);
+// }
+
+// console.log(XO("ooxX"));
+
+// codewars
+// Exes and Ohs
+// 3 nacin sa objektom
+// function XO(str) {
+//   let obj = { x: 0, o: 0 };
+//   str = str.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === "x") {
+//       obj.x++;
+//     }
+//     if (str[i] === "o") {
+//       obj.o++;
+//     }
+//   }
+//   return obj.x === obj.o;
+// }
+
+// function XO(str) {
+//   let obj = {};
+//   str = str.toLowerCase();
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (obj[str[i]]) {
+//       obj[str[i]]++;
+//     } else {
+//       obj[str[i]] = 1;
+//     }
+//   }
+//   console.log(obj.o === obj.x);
+// }
+
+// console.log(XO("ooxXxa"));
+
+// codewars
+// Shortest Word
+console.clear();
+// function findShort(str) {
+//   str = str.split(" ");
+//   let minStr = str[0].length;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i].length < minStr) {
+//       minStr = str[i].length;
+//     }
+//   }
+//   return minStr;
+// }
+
+// console.log(findShort("Let's travel abroad shall we"));
+
+// codewars
+// Shortest Word
+// 2 nacin
+// function findShort(str) {
+//   return str
+//     .split(" ")
+//     .map((el) => el.length)
+//     .reduce((a, b) => Math.min(a, b));
+// }
+// console.log(findShort("Let's travel abroad shall we"));
+// codewars
+// Reverse words
+// function reverseWords(str) {
+//   // Go for
+//   console.log(str.split("").reverse().join("").split(" ").reverse().join(" "));
+// }
+// // console.log(reverseWords("apple"));
+// console.log(reverseWords("The quick brown fox jumps over the lazy dog."));
+
+// codewars
+// String ends with
+// function solution(str, ending) {
+//   console.log(str.endsWith("e"));
+//   console.log(str.endsWith(ending));
+// }
+// console.log(solution("abcde", "cde"));
+// codewars
+// Sum of Digits / Digital Root
+// function digitalRoot(num) {
+//   const novi = String(num)
+//     .split("")
+//     .reduce((prev, curr) => {
+//       return Number(prev) + Number(curr);
+//     });
+//   if (novi === "0") {
+//     return 0;
+//   }
+//   if (novi === "10") {
+//     return 1;
+//   }
+//   // ako je broj veci od 10 onda ponovi funkciju ako ne vrati taj broj
+//   return novi >= 10 ? digitalRoot(novi) : novi;
+// }
+
+// console.log(digitalRoot(456));
