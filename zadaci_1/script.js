@@ -1918,353 +1918,353 @@
 // ---------------------------
 
 const noviUser = {
-    ime: "Kemal",
-    godiste: 1999,
-    email: "kemalkujovic1111@gmail.com",
-    zaispis: function () {
-      console.log("radi");
-    },
-    interesovanja: [
-      { naziv: "Pecanje", stepen: "7" },
-      { naziv: "Slikarstvo", stepen: "4" },
-      { naziv: "Programerstvo", stepen: "10" },
-    ],
-  };
-  
-  console.log(noviUser.interesovanja);
-  
-  for (let i = 0; i < noviUser.interesovanja.length; i++) {
-    console.log(i);
-    if (noviUser.interesovanja[i].stepen > 5) {
-      console.log(noviUser.interesovanja[i].naziv, "Ima veci od 5");
+  ime: "Kemal",
+  godiste: 1999,
+  email: "kemalkujovic1111@gmail.com",
+  zaispis: function () {
+    console.log("radi");
+  },
+  interesovanja: [
+    { naziv: "Pecanje", stepen: "7" },
+    { naziv: "Slikarstvo", stepen: "4" },
+    { naziv: "Programerstvo", stepen: "10" },
+  ],
+};
+
+console.log(noviUser.interesovanja);
+
+for (let i = 0; i < noviUser.interesovanja.length; i++) {
+  console.log(i);
+  if (noviUser.interesovanja[i].stepen > 5) {
+    console.log(noviUser.interesovanja[i].naziv, "Ima veci od 5");
+  }
+}
+
+// noviUser.forEach((element, i) => {
+//   console.log(
+//     element.interesovanja.filter((el, i) => {
+//       return el.stepen > 5;
+//     })
+//   );
+// });
+
+// const objekat1 = {
+//   ime: "Kemal",
+//   god: 99,
+//   godiste: 1999,
+// };
+// console.clear();
+// for (let kljuc in objekat1) {
+//   console.log(kljuc, ":", objekat1[kljuc]);
+// }
+
+// codewars
+// Multiply Word in String
+// console.clear();
+// function modifyMultiply(str, loc, num) {
+//   let arr = str.split(" ");
+//   let dodati = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (loc === i) {
+//       for (let j = 0; j < num; j++) {
+//         dodati.push(arr[i]);
+//       }
+//     }
+//   }
+//   return dodati.join("-");
+// }
+
+// console.log(modifyMultiply("This is a string", 3, 5));
+
+// codewarrs
+// Multiply Word in string
+// console.clear();
+// function modifyMultiply(str, loc, num) {
+//   let arr = str.split(" ");
+//   let res = [];
+//   let strres = "";
+//   for (i = 0; i < num; i++) {
+//     console.log(arr[loc]);
+//     res.push(arr[loc]);
+//     strres = res.join("-");
+//   }
+//   return strres;
+// }
+
+// console.log(modifyMultiply("This is a string", 3, 5));
+
+// codewars
+// Multiply Word in string
+// console.clear();
+// function modifyMultiply(str, i, n) {
+//   console.log(Array(n).fill(str.split(" ")[i]).join("-"));
+//   return Array(n).fill(str.split(" ")[i]).join("-");
+// https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
+// console.clear();
+// function findAverage(array) {
+//   // return array.reduce((prev, curr) => prev + curr) / array.length;
+//   if (array.length === 0) {
+//     return 0;
+//   }
+//   let sum = 0;
+//   array.reduce((prev, curr) => {
+//     return (sum = prev + curr);
+//   });
+//   return sum / array.length;
+// }
+// console.log(findAverage([1, 1, 1]));
+// console.log(findAverage([1, 2, 3, 4]));
+// console.log(findAverage([]));
+// https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript
+// console.clear();
+// codewars
+// Who likes it
+// function likes(names) {
+//   if (names.length === 0) {
+//     return "no one likes this";
+//   }
+//   let novi = names.join("");
+//   if (names.length === 1) {
+//     return novi + " likes this";
+//   }
+//   if (names.length === 2) {
+//     return names.join(" and ") + " likes this";
+//   }
+//   if (names.length === 3) {
+//     return names[0] + ", " + names.slice(1).join(" and ") + " likes this";
+//   }
+//   if (names.length > 3) {
+//     return `${names[0]}, ${names.slice(1, 2)} and ${
+//       names.length - 2
+//     } others like this`;
+//   }
+// }
+// // likes(['Alex', 'Jacob', 'Mark', 'Max']), 'Alex, Jacob and 2 others like this'
+// console.log(likes([]));
+// console.log(likes(["Kemal"]));
+// console.log(likes(["Kemal", "Fuad"]));
+// console.log(likes(["Kemal", "Fuad", "Suad"]));
+// console.log(likes(["Kemal", "Fuad", "Suad", "petar"]));
+// console.log(likes(["Sukic", "Kemal", "Fuad", "Suad", "petar"]));
+console.clear();
+// codewards
+// Stanton measure
+// function stantonMeasure(arr) {
+//   let count1 = 0;
+//   let count2 = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 1) {
+//       count1++;
+//     }
+//   }
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] === count1) {
+//       count2++;
+//     }
+//   }
+//   return count2;
+// }
+
+// console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2]));
+// codewars
+// Simple Fun #176: Reverse Letter
+// function reverseLetter(str) {
+//   //coding and coding..
+//   let rec = "";
+
+//   for (let u = 0; u < str.length; u++) {
+//     if (str[u] !== "?") {
+//       rec += str[u];
+//     }
+//   }
+//   return rec
+//     .split("")
+//     .reverse()
+//     .join("")
+//     .replace(/[^a-z]/gi, "");
+// }
+
+// console.log(reverseLetter("kemal"));
+// console.log(reverseLetter("ke3m?al"));
+
+// codewars
+// function abbrevName(name) {
+//   // code away
+//   return name
+//     .split(" ")
+
+//     .map((el) => el[0])
+//     .join(".")
+//     .toUpperCase();
+// }
+
+// console.log(abbrevName("Kemal Kujovic"));
+// console.log(abbrevName("kemal Kujovic
+
+// function sum() {
+//   let suma = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     suma += arguments[i];
+//   }
+//   return suma;
+// }
+
+// console.log(sum(1, 1, 1, 1, 1, 1, 1, 1));
+
+// codewars
+// Make acronym
+// function toAcronym(inp) {
+// return name
+//   .join()
+//   .split(" ")
+//   .map((el) => el[0])
+//   .join("")
+//   .toUpperCase();
+//   return inp
+//     .split(" ")
+//     .map((el) => el[0].toUpperCase())
+//     .join("");
+// }
+
+// console.log(toAcronym("Code Wars"));
+
+// codewars
+// V A P O R C O D E
+// function vaporcode(string) {
+//   console.log(string.split(" ").join("").toUpperCase().split("").join("  "));
+// }
+
+// console.log(vaporcode("Lets go to movies"));
+// console.log(vaporcode("Lets isn't to movies"));
+
+// codewars
+// Currying functions: multiply all elements in an array
+// function multiply(arr) {
+//   return function (num) {
+//     return arr.map((el) => el * num);
+//   };
+// }
+
+// console.log(multiply([1, 2, 3])(2));
+
+// function sabiranje(a) {
+//   return function (b) {
+//     return a + b;
+//   };
+// }
+// console.log(sabiranje(2)(5));
+
+// codewars
+// Mexican Wave
+console.clear();
+
+// function wave(str) {
+//   let arr = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//       continue;
+//     } else {
+//       arr.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1));
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(wave("hello"));
+// console.log(wave("two words"));
+// console.log(wave(" gap "));
+
+// codewars
+// Array.diff
+// function arrayDiff(arr1, arr2) {
+//   return arr1.filter((el) => {
+//     return !arr2.includes(el);
+//   });
+// }
+
+// console.log(arrayDiff([1, 2], [1]));
+
+// codewars
+// Duplicate Encoder
+// function duplicateEncode(word) {
+//   const arr = word.toLowerCase().split("");
+//   const novi = arr.map((el, i, array) => {
+//     if (array.indexOf(el) === array.lastIndexOf(el)) {
+//       return "(";
+//     } else {
+//       return ")";
+//     }
+//   });
+
+//   return novi.join("");
+// }
+// console.log(duplicateEncode("din"));
+// console.log(duplicateEncode("recede"));
+// console.log(duplicateEncode("success"));
+
+// codewars
+// Tribonacci Sequence
+function tribonacci(arr, num) {
+  let arr2 = [];
+  for (let i = 0; i < num; i++) {
+    if (i < 3) {
+      arr2.push(arr[i]);
+    } else {
+      arr2.push(arr2[i - 1] + arr2[i - 2] + arr2[i - 3]);
     }
   }
-  
-  // noviUser.forEach((element, i) => {
-  //   console.log(
-  //     element.interesovanja.filter((el, i) => {
-  //       return el.stepen > 5;
-  //     })
-  //   );
-  // });
-  
-  // const objekat1 = {
-  //   ime: "Kemal",
-  //   god: 99,
-  //   godiste: 1999,
-  // };
-  // console.clear();
-  // for (let kljuc in objekat1) {
-  //   console.log(kljuc, ":", objekat1[kljuc]);
-  // }
-  
-  // codewars
-  // Multiply Word in String
-  // console.clear();
-  // function modifyMultiply(str, loc, num) {
-  //   let arr = str.split(" ");
-  //   let dodati = [];
-  //   for (let i = 0; i < arr.length; i++) {
-  //     if (loc === i) {
-  //       for (let j = 0; j < num; j++) {
-  //         dodati.push(arr[i]);
-  //       }
-  //     }
-  //   }
-  //   return dodati.join("-");
-  // }
-  
-  // console.log(modifyMultiply("This is a string", 3, 5));
-  
-  // codewarrs
-  // Multiply Word in string
-  // console.clear();
-  // function modifyMultiply(str, loc, num) {
-  //   let arr = str.split(" ");
-  //   let res = [];
-  //   let strres = "";
-  //   for (i = 0; i < num; i++) {
-  //     console.log(arr[loc]);
-  //     res.push(arr[loc]);
-  //     strres = res.join("-");
-  //   }
-  //   return strres;
-  // }
-  
-  // console.log(modifyMultiply("This is a string", 3, 5));
-  
-  // codewars
-  // Multiply Word in string
-  // console.clear();
-  // function modifyMultiply(str, i, n) {
-  //   console.log(Array(n).fill(str.split(" ")[i]).join("-"));
-  //   return Array(n).fill(str.split(" ")[i]).join("-");
-  // https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
-  // console.clear();
-  // function findAverage(array) {
-  //   // return array.reduce((prev, curr) => prev + curr) / array.length;
-  //   if (array.length === 0) {
-  //     return 0;
-  //   }
-  //   let sum = 0;
-  //   array.reduce((prev, curr) => {
-  //     return (sum = prev + curr);
-  //   });
-  //   return sum / array.length;
-  // }
-  // console.log(findAverage([1, 1, 1]));
-  // console.log(findAverage([1, 2, 3, 4]));
-  // console.log(findAverage([]));
-  // https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript
-  // console.clear();
-  // function likes(names) {
-  //   if (names.length === 0) {
-  //     return "no one likes this";
-  //   }
-  //   let novi = names.join("");
-  //   if (names.length === 1) {
-  //     return novi + " likes this";
-  //   }
-  //   if (names.length === 2) {
-  //     return names.join(" and ") + " likes this";
-  //   }
-  //   if (names.length === 3) {
-  //     return names[0] + ", " + names.slice(1).join(" and ") + " likes this";
-  //   }
-  //   if (names.length > 3) {
-  //     return `${names[0]}, ${names.slice(1, 2)} and ${
-  //       names.length - 2
-  //     } others like this`;
-  //   }
-  // }
-  // // likes(['Alex', 'Jacob', 'Mark', 'Max']), 'Alex, Jacob and 2 others like this'
-  // console.log(likes([]));
-  // console.log(likes(["Kemal"]));
-  // console.log(likes(["Kemal", "Fuad"]));
-  // console.log(likes(["Kemal", "Fuad", "Suad"]));
-  // console.log(likes(["Kemal", "Fuad", "Suad", "petar"]));
-  // console.log(likes(["Sukic", "Kemal", "Fuad", "Suad", "petar"]));
-  console.clear();
-  // codewards
-  // Stanton measure
-  // function stantonMeasure(arr) {
-  //   let count1 = 0;
-  //   let count2 = 0;
-  //   for (let i = 0; i < arr.length; i++) {
-  //     if (arr[i] === 1) {
-  //       count1++;
-  //     }
-  //   }
-  //   for (let j = 0; j < arr.length; j++) {
-  //     if (arr[j] === count1) {
-  //       count2++;
-  //     }
-  //   }
-  //   return count2;
-  // }
-  
-  // console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2]));
-  // codewars
-  // Simple Fun #176: Reverse Letter
-  // function reverseLetter(str) {
-  //   //coding and coding..
-  //   let rec = "";
-  
-  //   for (let u = 0; u < str.length; u++) {
-  //     if (str[u] !== "?") {
-  //       rec += str[u];
-  //     }
-  //   }
-  //   return rec
-  //     .split("")
-  //     .reverse()
-  //     .join("")
-  //     .replace(/[^a-z]/gi, "");
-  // }
-  
-  // console.log(reverseLetter("kemal"));
-  // console.log(reverseLetter("ke3m?al"));
-  
-  // codewars
-  // function abbrevName(name) {
-  //   // code away
-  //   return name
-  //     .split(" ")
-  
-  //     .map((el) => el[0])
-  //     .join(".")
-  //     .toUpperCase();
-  // }
-  
-  // console.log(abbrevName("Kemal Kujovic"));
-  // console.log(abbrevName("kemal Kujovic
-  
-  // function sum() {
-  //   let suma = 0;
-  //   for (let i = 0; i < arguments.length; i++) {
-  //     suma += arguments[i];
-  //   }
-  //   return suma;
-  // }
-  
-  // console.log(sum(1, 1, 1, 1, 1, 1, 1, 1));
-  
-  // codewars
-  // Make acronym
-  // function toAcronym(inp) {
-  // return name
-  //   .join()
-  //   .split(" ")
-  //   .map((el) => el[0])
-  //   .join("")
-  //   .toUpperCase();
-  //   return inp
-  //     .split(" ")
-  //     .map((el) => el[0].toUpperCase())
-  //     .join("");
-  // }
-  
-  // console.log(toAcronym("Code Wars"));
-  
-  // codewars
-  // V A P O R C O D E
-  // function vaporcode(string) {
-  //   console.log(string.split(" ").join("").toUpperCase().split("").join("  "));
-  // }
-  
-  // console.log(vaporcode("Lets go to movies"));
-  // console.log(vaporcode("Lets isn't to movies"));
-  
-  // codewars
-  // Currying functions: multiply all elements in an array
-  // function multiply(arr) {
-  //   return function (num) {
-  //     return arr.map((el) => el * num);
-  //   };
-  // }
-  
-  // console.log(multiply([1, 2, 3])(2));
-  
-  // function sabiranje(a) {
-  //   return function (b) {
-  //     return a + b;
-  //   };
-  // }
-  // console.log(sabiranje(2)(5));
-  
-  // codewars
-  // Mexican Wave
-  console.clear();
-  
-  // function wave(str) {
-  //   let arr = [];
-  
-  //   for (let i = 0; i < str.length; i++) {
-  //     if (str[i] === " ") {
-  //       continue;
-  //     } else {
-  //       arr.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1));
-  //     }
-  //   }
-  //   return arr;
-  // }
-  
-  // console.log(wave("hello"));
-  // console.log(wave("two words"));
-  // console.log(wave(" gap "));
-  
-  // codewars
-  // Array.diff
-  // function arrayDiff(arr1, arr2) {
-  //   return arr1.filter((el) => {
-  //     return !arr2.includes(el);
-  //   });
-  // }
-  
-  // console.log(arrayDiff([1, 2], [1]));
-  
-  // codewars
-  // Duplicate Encoder
-  // function duplicateEncode(word) {
-  //   const arr = word.toLowerCase().split("");
-  //   const novi = arr.map((el, i, array) => {
-  //     if (array.indexOf(el) === array.lastIndexOf(el)) {
-  //       return "(";
-  //     } else {
-  //       return ")";
-  //     }
-  //   });
-  
-  //   return novi.join("");
-  // }
-  // console.log(duplicateEncode("din"));
-  // console.log(duplicateEncode("recede"));
-  // console.log(duplicateEncode("success"));
-  
-  // codewars
-  // Tribonacci Sequence
-  function tribonacci(arr, num) {
-    let arr2 = [];
-    for (let i = 0; i < num; i++) {
-      if (i < 3) {
-        arr2.push(arr[i]);
-      } else {
-        arr2.push(arr2[i - 1] + arr2[i - 2] + arr2[i - 3]);
-      }
-    }
-    return arr2;
-  }
-  
-  console.log(tribonacci([1, 1, 1], 10));
-  console.log(tribonacci([0, 0, 1], 10));
-  console.clear();
-  // codewars
-  // Vowel Count
-  
-  // function getCount(str) {
-  //   let brojac = 0;
-  //   for (let i = 0; i < str.length; i++) {
-  //     if (
-  //       str[i] === "a" ||
-  //       str[i] === "e" ||
-  //       str[i] === "i" ||
-  //       str[i] === "u" ||
-  //       str[i] === "o"
-  //     ) {
-  //       brojac += 1;
-  //     }
-  //   }
-  //   return brojac;
-  // }
-  
-  // console.log(getCount("abracadabra"));
-  
-  // codewars
-  // Highest and Lowest
-  // function highAndLow(numbers) {
-  //   let broj = numbers.split(" ");
-  //   let minBroj = Number(broj[0]);
-  //   let maxBroj = Number(broj[0]);
-  //   for (let i = 0; i < broj.length; i++) {
-  //     if (Number(broj[i]) > maxBroj) {
-  //       maxBroj = broj[i];
-  //     } else if (Number(broj[i]) < minBroj) {
-  //       minBroj = broj[i];
-  //     }
-  //   }
-  //   return `${maxBroj} ${minBroj}`;
-  // }
-  
-  // // function highAndLow(numbers){
-  // //   var arr = numbers.split(' ').sort(function(a, b) { return a - b });
-  // //   return arr[arr.length -1] + ' ' + arr[0];
-  // // }
-  // console.log(highAndLow("1 2 3 4 5"));
-  // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
-  
+  return arr2;
+}
 
+console.log(tribonacci([1, 1, 1], 10));
+console.log(tribonacci([0, 0, 1], 10));
+console.clear();
+// codewars
+// Vowel Count
 
-  // cas 9/20/2022
+// function getCount(str) {
+//   let brojac = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] === "a" ||
+//       str[i] === "e" ||
+//       str[i] === "i" ||
+//       str[i] === "u" ||
+//       str[i] === "o"
+//     ) {
+//       brojac += 1;
+//     }
+//   }
+//   return brojac;
+// }
+
+// console.log(getCount("abracadabra"));
+
+// codewars
+// Highest and Lowest
+// function highAndLow(numbers) {
+//   let broj = numbers.split(" ");
+//   let minBroj = Number(broj[0]);
+//   let maxBroj = Number(broj[0]);
+//   for (let i = 0; i < broj.length; i++) {
+//     if (Number(broj[i]) > maxBroj) {
+//       maxBroj = broj[i];
+//     } else if (Number(broj[i]) < minBroj) {
+//       minBroj = broj[i];
+//     }
+//   }
+//   return `${maxBroj} ${minBroj}`;
+// }
+
+// // function highAndLow(numbers){
+// //   var arr = numbers.split(' ').sort(function(a, b) { return a - b });
+// //   return arr[arr.length -1] + ' ' + arr[0];
+// // }
+// console.log(highAndLow("1 2 3 4 5"));
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+// cas 9/20/2022
 
 //   function modifyMultiply(str,loc,num){
 //     let arr = str.split(' ');
@@ -2306,4 +2306,163 @@ const noviUser = {
 // }
 
 // console.log(abName('Kemal Kujovic'));
+// codewars
+// Day of the week.
+// function dayOfTheWeek(date) {
+//   return new Date(date.split("/").reverse().join("-")).toLocaleString("en-us", {
+//     weekday: "long",
+//   });
+// }
 
+// console.log(dayOfTheWeek("02/06/1940"));
+
+// codewars
+// Switcheroo
+
+// function switcheroo(x) {
+//   return x
+//     .split("")
+//     .map((el) => {
+//       if (el === "a") {
+//         return "b";
+//       } else if (el === "b") {
+//         return "a";
+//       } else {
+//         return el;
+//       }
+//     })
+//     .join("");
+// }
+
+// console.log(switcheroo("acb"));
+console.clear();
+
+// codewars
+// Likes or Dislakes
+// function likeOrDislike(buttons) {
+//   // ulazi u for, prvo postaje noth like posle dislike ako se ijedna javi ista sledeca ulazi u if i postaje nothing jer se ponavlja dva put.
+//   let nothing = "Nothing";
+//   for (let i = 0; i < buttons.length; i++) {
+//     if (buttons[i] === nothing) {
+//       nothing = "Nothing";
+//     } else {
+//       nothing = buttons[i];
+//     }
+//   }
+//   return nothing;
+
+// 2 nacin sa codewarsa return buttons.reduce( (state,button) => button===state ? Nothing : button , Nothing );
+
+// }
+
+// console.log(likeOrDislike(["Like", "Dislike", "Dislike"]));
+
+// codewars
+// You got change?
+
+// function giveChange(amount) {
+//   let arr = [0, 0, 0, 0, 0, 0];
+
+//   while (amount >= 100) {
+//     arr[5] += 1;
+//     amount -= 100;
+//   }
+//   while (amount >= 50) {
+//     arr[4]++;
+//     amount -= 50;
+//   }
+//   while (amount >= 20) {
+//     arr[3]++;
+//     amount -= 20;
+//   }
+//   while (amount >= 10) {
+//     arr[2]++;
+//     amount -= 10;
+//   }
+//   while (amount >= 5) {
+//     arr[1]++;
+//     amount -= 5;
+//   }
+//   while (amount >= 1) {
+//     arr[0]++;
+//     amount -= 1;
+//   }
+//   return arr;
+// }
+
+// console.log(giveChange(365));
+
+// codewars
+// Find the odd int
+
+// function findOdd(num) {
+//   let result = 0;
+//   let obj = {};
+//   // prolazimo kroz niz
+//   for (let i = 0; i < num.length; i++) {
+//     // ako imamo vec taj broj dodajemo mu jedan
+//     if (obj[num[i]]) {
+//       obj[num[i]]++;
+//       // ako nemamo broj dodajemo u objekat i dajemo mu value jedan.
+//     } else {
+//       obj[num[i]] = 1;
+//     }
+//   }
+//   // prolazimo kroz objekat
+//   for (let key in obj) {
+//     // uzimamo vrednost od keyova i pitamo dali je modul od 2 jedan jedan tj. neparan.
+//     console.log(key, obj);
+//     if (obj[key] % 2 === 1) {
+//       // ako jeste dodajemo mu u result taj key
+//       result = key;
+//     }
+//   }
+//   // jer svaki key je string moramo vratiti number
+//   return Number(result);
+// }
+
+// console.log(findOdd([1, 1, 2]));
+// // console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
+
+// codewars
+// Disemvowel Trolls
+
+// function disemvowel(str) {
+//   let result = "";
+
+//   for (i = 0; i < str.length; i++) {
+//     // ako sadrzi koji bilo znak od 'aeiou' onda samo nastavi
+//     if ("aeiou".includes(str[i].toLowerCase())) continue;
+//     result += str[i];
+//   }
+//   return result;
+// }
+
+// console.log(disemvowel("This website is for losers LOL!"));
+// codewars
+// Disemvowel Trolls
+// 2 nacin
+// function disemvowel(str) {
+//   let samoG = "aeiuo";
+//   return str
+//     .split("")
+//     .filter((el) => !samoG.includes(el.toLowerCase()))
+//     .join("");
+// }
+
+// console.log(disemvowel("This website is for losers LOL!"));
+
+// codewars
+// Descending Order
+// function descendingOrder(n) {
+//   //...
+//   let str = String(n);
+
+//   let order = str
+//     .split("")
+//     .sort((a, b) => b - a)
+//     .join("");
+//   return Number(order);
+// }
+
+// console.log(descendingOrder(15));
