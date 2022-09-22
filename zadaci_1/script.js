@@ -2594,6 +2594,7 @@ function findOdd(num) {
 //       obj[str[i]] = 1;
 //     }
 //   }
+//   console.log(obj);
 //   console.log(obj.o === obj.x);
 // }
 
@@ -2601,7 +2602,7 @@ function findOdd(num) {
 
 // codewars
 // Shortest Word
-console.clear();
+// console.clear();
 // function findShort(str) {
 //   str = str.split(" ");
 //   let minStr = str[0].length;
@@ -2660,3 +2661,38 @@ console.clear();
 // }
 
 // console.log(digitalRoot(456));
+
+
+// // codewars
+// function anagrams(word, words){
+//   let sort1 = word.split('').sort().join('')
+
+//   return words.filter((el) => el.split('').sort().join('') === sort1)
+// }
+
+// console.log(anagrams('abba', ['aabb','abcd','bbaa','dada']));
+
+// codewars
+// Counting Duplicates
+// function duplicateCount(str) {
+//   let obj = {};
+//   str = str.toLowerCase();
+//   let brojac = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (obj[str[i]]) {
+//       obj[str[i]]++;
+//     } else {
+//       obj[str[i]] = 1;
+//     }
+//   }
+//   for(let key in obj){
+//     if(obj[key] > 1){
+//       brojac++
+//     }
+//   }
+  
+//   return brojac;
+// }
+
+// // console.log(duplicateCount('abcde'));
+// console.log(duplicateCount('Indivisibility'));
