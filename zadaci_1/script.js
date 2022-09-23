@@ -2046,7 +2046,6 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 // console.log(likes(["Kemal", "Fuad", "Suad"]));
 // console.log(likes(["Kemal", "Fuad", "Suad", "petar"]));
 // console.log(likes(["Sukic", "Kemal", "Fuad", "Suad", "petar"]));
-console.clear();
 // codewards
 // Stanton measure
 // function stantonMeasure(arr) {
@@ -2734,3 +2733,95 @@ function findOdd(num) {
 
 // let ship = new Ship(55, 3);
 // console.log(ship.isWorthIt());
+
+// codewars
+// Count the smiley faces!
+// function countSmileys(arr) {
+//   if (arr.length === 0) {
+//     return 0;
+//   }
+//   let validS = [
+//     ":)",
+//     ";)",
+//     ":D",
+//     ";D",
+//     ":-D",
+//     ":~D",
+//     ":-)",
+//     ":~)",
+//     ";~D",
+//     ";~)",
+//     ";-D",
+//     ";-)",
+//   ];
+//   let brojac = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (validS.includes(arr[i])) {
+//       brojac++;
+//     }
+//   }
+//   return brojac;
+// }
+
+// console.log(countSmileys([":D", ":~)", ";~D", ":)"]));
+
+// codewars
+// Unique In Order
+// let uniqueInOrder = function (iterable) {
+//   let arr = [];
+//   for (let i = 0; i < iterable.length; i++) {
+//     if (iterable[i] !== iterable[i + 1]) {
+//       arr.push(iterable[i]);
+//     }
+//   }
+//   return arr;
+// };
+
+// console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+
+// codewars
+// Sort the odd
+
+// function sortArray(array) {
+//   // Return a sorted array.
+//   let oddArr = array.filter((el) => el % 2 === 1).sort((a, b) => a - b);
+//   // neparni brojevi sortirani od najmanjeg do najveceg neparnog broja.
+//   // el % 2 vazi isto samo vazi i za negativne brojeve
+//   let all = array.map((el, i) => {
+//     if (el % 2 === 1) {
+//       // shift uzima svkaki prvi element i brise ga
+//       return oddArr.shift();
+//     } else {
+//       return el;
+//     }
+//   });
+//   return all;
+// }
+
+// console.log(sortArray([5, 3, 2, 8, 1, 4]));
+
+// codewars
+// Moving Zeros To The End
+// const moveZeros = function (arr) {
+//   const arrNule = arr.filter((el) => el === 0);
+//   let bezNule = arr.filter((el) => el !== 0);
+
+//   arrNule.forEach((el) => {
+//     bezNule.push(el);
+//   });
+//   return bezNule;
+// };
+// console.log(moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
+console.clear();
+// codewars
+// Multiples of 3 or 5
+// function solution(num) {
+//   let arr = [];
+//   for (let i = 1; i < num; i++) {
+//     if (i % 3 === 0 || i % 5 === 0) {
+//       arr.push(i);
+//     }
+//   }
+//   return arr.reduce((a, b) => a + b, 0);
+// }
+// console.log(solution(10));
