@@ -2662,7 +2662,6 @@ function findOdd(num) {
 
 // console.log(digitalRoot(456));
 
-
 // // codewars
 // function anagrams(word, words){
 //   let sort1 = word.split('').sort().join('')
@@ -2690,9 +2689,34 @@ function findOdd(num) {
 //       brojac++
 //     }
 //   }
-  
+
 //   return brojac;
 // }
 
 // // console.log(duplicateCount('abcde'));
 // console.log(duplicateCount('Indivisibility'));
+// codewars
+// Count characters in your string
+
+// function count(string) {
+//   // The function code should be here
+//   let obj = {};
+//   for (let i = 0; i < str.length; i++) {
+//     if (obj[str[i]]) {
+//       obj[str[i]]++;
+//     } else {
+//       obj[str[i]] = 1;
+//     }
+//   }
+//   return obj;
+// }
+// console.log(count("aba"));
+
+// // 2 nacin sa codewarsa
+// function count (string) {
+//   var obj = {};
+//   string.split('').forEach(function(s) {
+//      obj[s] ? obj[s]++ : obj[s] = 1;
+//   });
+//   return count;
+// }
