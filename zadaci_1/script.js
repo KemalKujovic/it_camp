@@ -2720,3 +2720,17 @@ function findOdd(num) {
 //   });
 //   return count;
 // }
+
+//codewars
+// Object Oriented Piracy
+// function Ship(draft, crew) {
+//   this.draft = draft;
+//   this.crew = crew;
+// }
+
+// Ship.prototype.isWorthIt = function () {
+//   return this.draft - this.crew * 1.5 > 20;
+// };
+
+// let ship = new Ship(55, 3);
+// console.log(ship.isWorthIt());
