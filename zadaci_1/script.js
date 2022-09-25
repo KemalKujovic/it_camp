@@ -2333,20 +2333,6 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 //     .join("");
 // }
 
-// codewars
-// Create phone number
-
-// function createPhoneNumber(num) {
-//   // returns "(123) 456-7890"
-//   let prvaTri = num.filter((el, i) => i < 3);
-//   prvaTri = `(${prvaTri.join("")}) `;
-//   let drugaTri = num.filter((el, i) => i < 6 && i > 2);
-//   drugaTri = `${drugaTri.join("")}-`;
-//   let trecaCetri = num.filter((el, i) => i > 5 && i < num.length).join("");
-
-//   return `${prvaTri}${drugaTri}${trecaCetri}`;
-// }
-
 // console.log(switcheroo("acb"));
 // console.clear();
 
@@ -2840,68 +2826,21 @@ console.clear();
 // }
 // console.log(solution(10));
 
+
 // codewars
-// Stop gninnipS My sdroW!
-// function spinWords(string) {
-//   string = string.split(" ").map((el, i) => {
-//     if (el.length >= 5) {
-//       return el.split("").reverse().join("");
+// Find The Parity Outlier
+// function findOutlier(integers){
+//   const oddArray = [];
+//   const evenArray = [];
+//   for (let integer of integers) {
+//     if (integer % 2 === 0) {
+//       evenArray.push(integer);
 //     } else {
-//       return el;
+//       oddArray.push(integer);
 //     }
-//   });
-
-//   return string.join(" ");
-// }
-// console.log(spinWords("Hey fellow warriors"));
-
-// codewars
-// Create Phone Number
-// function createPhoneNumber(num) {
-//   // returns "(123) 456-7890"
-//   num = num.join("");
-
-//   return `(${num.slice(0, 3)}) ${num.slice(3, 6)}-${num.slice(6, num.length)}`;
-// }
-// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
-
-// codewars
-// Convert string to camel case
-// splice
-// function toCamelCase(str) {
-//   str = str.split("");
-//   return str
-//     .map((el, i) => {
-//       if (el === "-" || el === "_") {
-//         el = str[i + 1].toUpperCase();
-//         str.splice(i + 1, 1);
-//       }
-//       return el;
-//     })
-//     .join("");
+//   }
+//   return oddArray.length === 1 ? oddArray[0] : evenArray[0];
 // }
 
-// console.log(toCamelCase("the-stealth-warrior"));
-// console.log(toCamelCase("the_stealth_warrior"));
-
-// codewars
-// Simple Pig Latin
-
-// function pigIt(s) {
-//   return s
-//     .split(" ")
-//     .map((e, i) => {
-//       if (e[0] === "!" || e[0] === "?") {
-//         return e;
-//       } else {
-//         return e.slice(1) + e[0] + "ay";
-//       }
-//     })
-//     .join(" ");
-// }
-
-// console.log(pigIt("Hello !oy World")); // elloHay // oy!ay
-
-
-// Valid Parentheses
-// codewars
+// console.log(findOutlier([0,1,2]));
+// console.log(findOutlier([1,2,3]));
