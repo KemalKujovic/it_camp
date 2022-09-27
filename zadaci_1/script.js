@@ -2962,3 +2962,47 @@ console.log(
 
 // console.log(findOutlier([0,1,2]));
 // console.log(findOutlier([1,2,3]));
+
+// codewars
+// Remove the minimum
+console.clear();
+// function removeSmallest(numbers) {
+//   let najmanjeg = numbers[0];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < najmanjeg) {
+//       najmanjeg = numbers[i];
+//     }
+//   }
+//   return numbers.filter((el, i) => numbers.indexOf(najmanjeg) !== i);
+// }
+
+// console.log(removeSmallest([2, 2, 1, 2, 1]));
+// codewars
+// Sum of Intervals
+// function sumIntervals(intervals) {
+//   let obj = {};
+//   intervals.forEach((el) => {
+//     for (let i = el[0]; i < el[1]; i++) {
+//       console.log(i);
+//       obj[i] = i;
+//     }
+//   });
+//   return Object.values(obj).length;
+// }
+
+// function sumIntervals(intervals) {
+//   let arr = [];
+//   intervals.forEach((el) => {
+//     for (let i = el[0]; i < el[1]; i++) {
+//       arr.push(i);
+//     }
+//   });
+//   return arr.length;
+// }
+
+console.log(
+  sumIntervals([
+    [1, 5],
+    [5, 9],
+  ])
+);
