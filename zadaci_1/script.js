@@ -3000,9 +3000,37 @@ console.clear();
 //   return arr.length;
 // }
 
-console.log(
-  sumIntervals([
-    [1, 5],
-    [5, 9],
-  ])
-);
+// console.log(
+//   sumIntervals([
+//     [1, 5],
+//     [5, 9],
+//   ])
+// );
+
+// garden.bradwoods.io/blueprints/js-engine/basic
+// call-stack str podataka
+
+myFilter = function (argArr, clb) {
+  let noviArr = [];
+
+  for (let i = 0; i < argArr.length; i++) {
+    let newEl = clb(argArr[i]);
+    if (newEl) {
+      noviArr.push(newEl);
+    }
+
+  }
+  return noviArr;
+};
+
+let arr = [1, 2, 3, 4, 5, 6];
+
+let arr2 = myFilter(arr, function (el) {
+  if (el > 4) {
+    return el;
+  }
+});
+
+console.log(arr2);
+
+// reduce custom 
