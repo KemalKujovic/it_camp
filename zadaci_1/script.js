@@ -2826,7 +2826,7 @@ function findOdd(num) {
 //   return bezNule;
 // };
 // console.log(moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
-console.clear();
+// console.clear();
 // codewars
 // Multiples of 3 or 5
 // function solution(num) {
@@ -2965,7 +2965,7 @@ console.log(
 
 // codewars
 // Remove the minimum
-console.clear();
+// console.clear();
 // function removeSmallest(numbers) {
 //   let najmanjeg = numbers[0];
 //   for (let i = 0; i < numbers.length; i++) {
@@ -3010,27 +3010,60 @@ console.clear();
 // garden.bradwoods.io/blueprints/js-engine/basic
 // call-stack str podataka
 
-myFilter = function (argArr, clb) {
-  let noviArr = [];
+// myFilter = function (argArr, clb) {
+//   let noviArr = [];
 
-  for (let i = 0; i < argArr.length; i++) {
-    let newEl = clb(argArr[i]);
-    if (newEl) {
-      noviArr.push(newEl);
-    }
+//   for (let i = 0; i < argArr.length; i++) {
+//     let newEl = clb(argArr[i]);
+//     if (newEl) {
+//       noviArr.push(newEl);
+//     }
 
-  }
-  return noviArr;
-};
+//   }
+//   return noviArr;
+// };
 
-let arr = [1, 2, 3, 4, 5, 6];
+// let arr = [1, 2, 3, 4, 5, 6];
 
-let arr2 = myFilter(arr, function (el) {
-  if (el > 4) {
-    return el;
-  }
-});
+// let arr2 = myFilter(arr, function (el) {
+//   if (el > 4) {
+//     return el;
+//   }
+// });
 
-console.log(arr2);
+// console.log(arr2);
 
-// reduce custom 
+// -=============
+// reduce custom
+// myReduce = function (argArr, callBack) {
+//   let firstNum = 0;
+
+//   for (let i = 0; i < argArr.length; i++) {
+//     let newEl = callBack((firstNum = firstNum + argArr[i]));
+//   }
+//   return firstNum;
+// };
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// let arr2 = myReduce(arr, function (curr) {
+//   return curr;
+// });
+// console.log(arr2);
+
+// napisati program koji uzima 1000prvih prirodnih brojeva (n=1....1000) i u kom se glavnom telu  poziva funckija kojom se izdvajaju parni brojevi
+// i racuna ukupan zbir njihovih kvadrata, posle cega se ovaj zbir stampa na ekran
+console.clear();
+// function brojevi(num) {
+//   let n = "";
+//   let sumZbir = 0;
+//   for (let i = 0; i < num; i++) {
+//     if (i % 2 === 0) {
+//       n = Math.pow(i, 2);
+//       sumZbir += n;
+//     }
+//   }
+//   return sumZbir;
+// }
+
+// console.log(brojevi(1000));
