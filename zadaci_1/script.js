@@ -690,7 +690,8 @@
 // // // //     for (let j = 2; j < arr[i].length; j++) {
 
 // // // //     }
-
+// int a = 5;
+// int* p = &a;
 // // // // }
 
 // // // // const arr = [
@@ -3032,9 +3033,9 @@ console.log(
 // });
 
 // console.log(arr2);
-// console.clear()
-// // -=============
-// // reduce custom
+
+// -=============
+// reduce custom
 // myReduce = function (argArr, callBack) {
 //   let firstNum = 0;
 
@@ -3054,21 +3055,17 @@ console.log(
 // napisati program koji uzima 1000prvih prirodnih brojeva (n=1....1000) i u kom se glavnom telu  poziva funckija kojom se izdvajaju parni brojevi
 // i racuna ukupan zbir njihovih kvadrata, posle cega se ovaj zbir stampa na ekran
 console.clear();
-function brojevi(num) {
-  let n = "";
-  let sumZbir = 0;
-  for (let i = 0; i < num; i++) {
-    if (i % 2 === 0) {
-        // n = i ** 2
-      n = Math.pow(i, 2);
-      sumZbir += n;
-    }
-  }
-  return sumZbir;
-}
+// function brojevi(num) {
+//   let n = "";
+//   let sumZbir = 0;
+//   for (let i = 0; i < num; i++) {
+//     if (i % 2 === 0) {
+//       // n = Math.pow(i, 2)
+//       n = i ** 2;
+//       sumZbir += n;
+//     }
+//   }
+//   return sumZbir;
+// }
 
 // console.log(brojevi(1000));
-// deathzone temporal
-
-
-// jsv9000
