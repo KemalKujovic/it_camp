@@ -690,8 +690,7 @@
 // // // //     for (let j = 2; j < arr[i].length; j++) {
 
 // // // //     }
-// int a = 5;
-// int* p = &a;
+
 // // // // }
 
 // // // // const arr = [
@@ -3033,9 +3032,9 @@ console.log(
 // });
 
 // console.log(arr2);
-
-// -=============
-// reduce custom
+// console.clear()
+// // -=============
+// // reduce custom
 // myReduce = function (argArr, callBack) {
 //   let firstNum = 0;
 
@@ -3054,18 +3053,45 @@ console.log(
 
 // napisati program koji uzima 1000prvih prirodnih brojeva (n=1....1000) i u kom se glavnom telu  poziva funckija kojom se izdvajaju parni brojevi
 // i racuna ukupan zbir njihovih kvadrata, posle cega se ovaj zbir stampa na ekran
-console.clear();
-// function brojevi(num) {
-//   let n = "";
-//   let sumZbir = 0;
-//   for (let i = 0; i < num; i++) {
-//     if (i % 2 === 0) {
-//       // n = Math.pow(i, 2)
-//       n = i ** 2;
-//       sumZbir += n;
-//     }
-//   }
-//   return sumZbir;
-// }
+// console.clear();
+function brojevi(num) {
+  let n = "";
+  let sumZbir = 0;
+  for (let i = 0; i < num; i++) {
+    if (i % 2 === 0) {
+        // n = i ** 2
+      n = Math.pow(i, 2);
+      sumZbir += n;
+    }
+  }
+  return sumZbir;
+}
 
 // console.log(brojevi(1000));
+// deathzone temporal
+
+
+// jsv9000
+console.clear()
+class personal{
+  constructor(nickname, lastName){
+    this.nickname = nickname;
+    this.lastName = lastName;
+
+  }
+
+
+}
+const novi = new personal('Legi', 'Kemal');
+console.log(novi)
+;
+// clousre
+// nasledjivanje
+// class Nurse extends Person{
+// super(nickname, lastname)
+// }
+// 1 ench zatvaranje pristupa varijablama  #privatno kad oznacimo sa #
+// 2 nasledjivanje inherice
+// 3. Polomophism abstract ne moze da se pravi new object a kad nasledi child clasu moze se praviti sve normalno
+// 4 inhertiance poly nasledjuje ali ako ima istu metodu,funck ona gazi od roditelja i slusa sebe
+
