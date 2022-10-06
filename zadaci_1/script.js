@@ -3054,18 +3054,18 @@ console.log(
 // napisati program koji uzima 1000prvih prirodnih brojeva (n=1....1000) i u kom se glavnom telu  poziva funckija kojom se izdvajaju parni brojevi
 // i racuna ukupan zbir njihovih kvadrata, posle cega se ovaj zbir stampa na ekran
 // console.clear();
-function brojevi(num) {
-  let n = "";
-  let sumZbir = 0;
-  for (let i = 0; i < num; i++) {
-    if (i % 2 === 0) {
-        // n = i ** 2
-      n = Math.pow(i, 2);
-      sumZbir += n;
-    }
-  }
-  return sumZbir;
-}
+// function brojevi(num) {
+//   let n = "";
+//   let sumZbir = 0;
+//   for (let i = 0; i < num; i++) {
+//     if (i % 2 === 0) {
+//         // n = i ** 2
+//       n = Math.pow(i, 2);
+//       sumZbir += n;
+//     }
+//   }
+//   return sumZbir;
+// }
 
 // console.log(brojevi(1000));
 // deathzone temporal
@@ -3095,3 +3095,13 @@ console.log(novi)
 // 3. Polomophism abstract ne moze da se pravi new object a kad nasledi child clasu moze se praviti sve normalno
 // 4 inhertiance poly nasledjuje ali ako ima istu metodu,funck ona gazi od roditelja i slusa sebe
 
+
+// ashync
+console.clear();
+
+function nextBigger(n){
+
+  let broj =  Number(n.toString().split('').sort((a,b) => a - b).join(''))
+}
+
+console.log(nextBigger(12));
