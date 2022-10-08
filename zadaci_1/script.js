@@ -3099,9 +3099,32 @@ console.log(novi)
 // ashync
 console.clear();
 
-function nextBigger(n){
+// function nextBigger(n){
 
-  let broj =  Number(n.toString().split('').sort((a,b) => a - b).join(''))
-}
+//   let broj =  Number(n.toString().split('').sort((a,b) => a - b).join(''))
+// }
 
-console.log(nextBigger(12));
+// console.log(nextBigger(12));
+
+
+// function nextBigger(n) {
+//   const sortedDigits = n => ('' + n).split('').sort((a, b) => b - a)
+//   const max = +sortedDigits(n).join('')
+//   console.log(max);
+//   for (let i = n + 1; i <= max; i++) {
+//     if (max === +sortedDigits(i).join('')) return i
+//   }
+//   return -1
+// }
+
+// console.log(nextBigger(12));
+// catfacts
+// sta je http i https
+// async
+fetch('https://catfact.ninja/facts').then((res) =>{
+  res.json().then((res)=>{
+    console.log(res);
+  })
+}).catch((err)=>{
+  console.log('ne radi', err);
+})
