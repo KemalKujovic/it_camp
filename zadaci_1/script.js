@@ -3070,21 +3070,16 @@ console.log(
 // console.log(brojevi(1000));
 // deathzone temporal
 
-
 // jsv9000
-console.clear()
-class personal{
-  constructor(nickname, lastName){
+console.clear();
+class personal {
+  constructor(nickname, lastName) {
     this.nickname = nickname;
     this.lastName = lastName;
-
   }
-
-
 }
-const novi = new personal('Legi', 'Kemal');
-console.log(novi)
-;
+const novi = new personal("Legi", "Kemal");
+console.log(novi);
 // clousre
 // nasledjivanje
 // class Nurse extends Person{
@@ -3095,7 +3090,6 @@ console.log(novi)
 // 3. Polomophism abstract ne moze da se pravi new object a kad nasledi child clasu moze se praviti sve normalno
 // 4 inhertiance poly nasledjuje ali ako ima istu metodu,funck ona gazi od roditelja i slusa sebe
 
-
 // ashync
 console.clear();
 
@@ -3105,7 +3099,6 @@ console.clear();
 // }
 
 // console.log(nextBigger(12));
-
 
 // function nextBigger(n) {
 //   const sortedDigits = n => ('' + n).split('').sort((a, b) => b - a)
@@ -3121,10 +3114,24 @@ console.clear();
 // catfacts
 // sta je http i https
 // async
-fetch('https://catfact.ninja/facts').then((res) =>{
-  res.json().then((res)=>{
-    console.log(res);
+fetch("https://catfact.ninja/facts")
+  .then((res) => {
+    res.json().then((res) => {
+      let arr = res.data;
+      let maks = 0
+      for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        if(element.length > maks){
+          maks = element.length
+        }
+      }
+      fact = res.data.find((el)=> el.length === maks);
+      console.log(maks);
+      console.log(fact);
+    });
   })
-}).catch((err)=>{
-  console.log('ne radi', err);
-})
+  .catch((err) => {
+    // console.log('ne radi', err);
+  });
+
+  // sta je net, https, http udpb // dns 
