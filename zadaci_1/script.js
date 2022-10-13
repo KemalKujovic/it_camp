@@ -3007,6 +3007,25 @@ console.log(
 //   ])
 // );
 
+
+
+// sta je internet 
+
+// 1 ench zatvaranje pristupa varijablama  #privatno kad oznacimo sa #
+// 2 nasledjivanje inherice
+// 3. Polomophism abstract ne moze da se pravi new object a kad nasledi child clasu moze se praviti sve normalno
+// 4 inhertiance poly nasledjuje ali ako ima istu metodu,funck ona gazi od roditelja i slusa sebe
+//http je mrezni protokol komunkacije izmedju servera i vas
+//https - razlika izmedju http i https koja je mnogo sigurnija
+// internet znaci mreza unutar mreze , internet je globalni sistem,
+// dns se koristi da ne bi morali da ulazimo preko ip adrese vec nam omugcava da koristimo slova, zatim kad posaljemo zahtev te stranice, on nadje ip adresu vrati ip adresu i ta ip adresa se salje ko zahtev za ulazak na tu stranicu na primer.
+// tcp se deli vise na paketa(delova) pre prezuimanju se opet spaja, tcp ima ologu pravilo skapalnja paketa, pregled gresaka, i pokazuju gresku (ako postoji)
+// osi model se sastoji od 7 slojeva.
+// 1. Fizicki sloj, 2. Sloj veze. 3. mrezni sloj. 4. Transportni sloj. 5.Sloj sesije. 6.Sloj prezentacije. 7.Aplikativni sloj
+
+
+
+
 // garden.bradwoods.io/blueprints/js-engine/basic
 // call-stack str podataka
 
@@ -3118,14 +3137,14 @@ fetch("https://catfact.ninja/facts")
   .then((res) => {
     res.json().then((res) => {
       let arr = res.data;
-      let maks = 0
+      let maks = 0;
       for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
-        if(element.length > maks){
-          maks = element.length
+        if (element.length > maks) {
+          maks = element.length;
         }
       }
-      fact = res.data.find((el)=> el.length === maks);
+      fact = res.data.find((el) => el.length === maks);
       console.log(maks);
       console.log(fact);
     });
@@ -3134,5 +3153,4 @@ fetch("https://catfact.ninja/facts")
     // console.log('ne radi', err);
   });
 
-  // sta je internet, https, http tcpi udpb  dns osi ip
-  
+// sta je internet, https, http tcpi udpb  dns osi ip
