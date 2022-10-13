@@ -3134,4 +3134,5 @@ fetch("https://catfact.ninja/facts")
     // console.log('ne radi', err);
   });
 
-  // sta je net, https, http udpb // dns 
+  // sta je internet, https, http tcpi udpb  dns osi ip
+  
