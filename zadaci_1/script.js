@@ -3007,9 +3007,7 @@ console.log(
 //   ])
 // );
 
-
-
-// sta je internet 
+// sta je internet
 
 // 1 ench zatvaranje pristupa varijablama  #privatno kad oznacimo sa #
 // 2 nasledjivanje inherice
@@ -3022,9 +3020,6 @@ console.log(
 // tcp se deli vise na paketa(delova) pre prezuimanju se opet spaja, tcp ima ologu pravilo skapalnja paketa, pregled gresaka, i pokazuju gresku (ako postoji)
 // osi model se sastoji od 7 slojeva.
 // 1. Fizicki sloj, 2. Sloj veze. 3. mrezni sloj. 4. Transportni sloj. 5.Sloj sesije. 6.Sloj prezentacije. 7.Aplikativni sloj
-
-
-
 
 // garden.bradwoods.io/blueprints/js-engine/basic
 // call-stack str podataka
@@ -3133,24 +3128,52 @@ console.clear();
 // catfacts
 // sta je http i https
 // async
-fetch("https://catfact.ninja/facts")
-  .then((res) => {
-    res.json().then((res) => {
-      let arr = res.data;
-      let maks = 0;
-      for (let i = 0; i < arr.length; i++) {
-        const element = arr[i];
-        if (element.length > maks) {
-          maks = element.length;
-        }
-      }
-      fact = res.data.find((el) => el.length === maks);
-      console.log(maks);
-      console.log(fact);
-    });
-  })
-  .catch((err) => {
-    // console.log('ne radi', err);
-  });
+// fetch("https://catfact.ninja/facts")
+//   .then((res) => {
+//     res.json().then((res) => {
+//       let arr = res.data;
+//       let maks = 0;
+//       for (let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+//         if (element.length > maks) {
+//           maks = element.length;
+//         }
+//       }
+//       fact = res.data.find((el) => el.length === maks);
+//       console.log(maks);
+//       console.log(fact);
+//     });
+//   })
+//   .catch((err) => {
+//     // console.log('ne radi', err);
+//   });
 
 // sta je internet, https, http tcpi udpb  dns osi ip
+
+// Two fighters, one winner.
+console.clear();
+function declareWinner(fighter1, fighter2, firstAttacker) {
+  const figh1 = Math.ceil(fighter1.health / fighter2.damagePerAttack);
+  const figh2 = Math.ceil(fighter2.health / fighter1.damagePerAttack);
+
+  if (figh1 < figh2) {
+    return fighter2.name;
+  } else if (figh2 < figh1) {
+    return fighter1.name;
+  } else {
+    return firstAttacker;
+  }
+}
+
+function Fighter(name, health, damagePerAttack) {
+  this.name = name;
+  this.health = health;
+  this.damagePerAttack = damagePerAttack;
+  this.toString = function () {
+    return this.name;
+  };
+}
+
+console.log(
+  declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 6, 4), "Lew")
+);
