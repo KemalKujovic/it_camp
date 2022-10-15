@@ -3177,3 +3177,12 @@ function Fighter(name, health, damagePerAttack) {
 console.log(
   declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 6, 4), "Lew")
 );
+
+
+// garden.bardwoods.io
+// ashync callbackom i promiss (funkcije)
+
+// fetch('http://example.com/songs')
+// 	.then(response => response.json())
+// 	.then(data => console.log(data))
+// 	.catch(err => console.error(err));
