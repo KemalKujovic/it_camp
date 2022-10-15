@@ -3178,7 +3178,6 @@ console.log(
   declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 6, 4), "Lew")
 );
 
-
 // garden.bardwoods.io
 // ashync callbackom i promiss (funkcije)
 
@@ -3186,3 +3185,21 @@ console.log(
 // 	.then(response => response.json())
 // 	.then(data => console.log(data))
 // 	.catch(err => console.error(err));
+
+let facts = null;
+getDate = fetch("https://catfact.ninja/facts");
+
+getDate
+  .then((response) => {
+    return response.json();
+  })
+  .then((commits) => {
+    facts = commits.data;
+    facts.forEach(element => {
+      console.log(element.fact  );
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
