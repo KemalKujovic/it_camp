@@ -3241,3 +3241,300 @@ console.log(
 //   .catch((err) => {
 //     console.log(err);
 //   });
+
+// class Car {
+//   constructor(n, y) {
+//     this.name = n;
+//     this.year = y;
+//     this.calcAge = 2022 - y;
+//   }
+// }
+
+// const myCar = new Car("Ford", 2014);
+
+// console.log(myCar);
+
+// const secondCar = new Car("Mercedes", 2020);
+
+// console.log(secondCar);
+
+// mojaVar = { name: "dzemil" };
+
+// console.log(myCar);
+// console.log(mojaVar);
+
+// var asdasda = Number("1");
+
+// class Person {
+//   constructor(nickname, favUtensil) {
+//     this.nickname = nickname;
+//     this.favUtensil = favUtensil;
+//   }
+
+//   eatsCereal() {
+//     return `${this.nickname} eats cereal with ${this.favUtensil}`;
+//   }
+
+//   operate() {
+//     return "umm, I am not a doctor. I don't do this.";
+//   }
+// }
+
+// mojaVar = new Person("dzemil", "pan");
+// result = mojaVar.eatsCereal();
+// console.log(result);
+
+// mojaVar2 = new Person("drugo", "serpa");
+// result2 = mojaVar2.eatsCereal();
+// console.log(result2);
+
+// class Person {
+//   constructor(nickname, favUtensil) {
+//     this.nickname = nickname;
+//     this.favUtensil = favUtensil;
+//     throw new Error("FYI: Instance of Abstract class cannot be instantiated");
+//   }
+
+//   eatsCereal() {
+//     return `${this.nickname} eats cereal with ${this.favUtensil}`;
+//   }
+
+//   operate() {
+//     console.log(
+//       "umm, I am not a doctor. I don't do this. ===================="
+//     );
+//   }
+// }
+
+// class Doctor extends Person {
+//   constructor(nickname, favUtensil, name, color, specialty) {
+//     //super passes down attributes from super class, in this case from Person
+//     super(nickname, favUtensil);
+//     this.name = name;
+//     this.scrubs = color;
+//     this.specialty = specialty;
+//   }
+
+//   medicalLicense() {
+//     console.log(`${this.name}, ${this.specialty}`);
+//   }
+// }
+
+// class Nurse extends Person {
+//   #nurseName;
+//   #jmbg;
+//   constructor(nickname, favUtensil, name, jmbg) {
+//     //super passes down attributes from super class,
+//     //in this case from Person
+//     super(nickname, favUtensil);
+//     this.#jmbg = jmbg;
+//     this.#nurseName = name + this.#jmbg;
+//   }
+
+//   medicalLicense() {
+//     console.log(`${this.#nurseName}, nurse`);
+//   }
+
+//   getJmbg() {
+//     console.log(this.#jmbg);
+//     return this.#jmbg;
+//   }
+//   setJmbg(val) {
+//     this.#jmbg = val;
+//   }
+// }
+
+// dr = new Doctor("dzd", "pan", "dzemil", "white", "neuro");
+// dr.medicalLicense();
+// dr.operate();
+
+// nr = new Nurse("smr", "glass", "samra", 123123123213);
+// nr.operate();
+// nr.medicalLicense();
+// console.log(nr.nurseName);
+
+// nr.getJmbg();
+
+// class firstClass {
+//   constructor(arg1) {
+//     this.prop1 = arg1;
+//     this.prop2 = "dzemil";
+//   }
+//   add() {
+//     console.log("First Method");
+//   }
+// }
+// class secondClass extends firstClass {
+//   add(val) {
+//     console.log(30 + 40, val);
+//   }
+//   add(val, val2) {
+//     console.log(30 + 40, val, val2);
+//   }
+// }
+
+// var ob = new firstClass("dupljak");
+// var ob2 = new firstClass("dupljak", "dzemil");
+
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+// var C1 = class {
+//   constructor() {
+//     console.log("asdasd");
+//   }
+// };
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+// console.log("nekidok");
+
+// c1 = new C1();
+
+// function nextBigger(n) {
+//   console.log(n);
+//   console.log("-------------");
+//   digits = n
+//     .toString()
+//     .split("")
+//     .map((d) => Number(d));
+//   if (digits[digits.length - 1] === 0) {
+//     debugger;
+//     digits.splice(digits.length - 1, 1);
+//     digits.splice(digits.length - 1, 0, 0);
+//     let resultNum = Number(digits.join(""));
+//     return resultNum;
+//   }
+//   for (let i = digits.length - 1; i >= 0; i--) {
+//     const digit = digits[i];
+
+//     for (let j = i - 1; j >= 0; j--) {
+//       const d = digits[j];
+//       if (digit > d) {
+//         let tmp = digit;
+
+//         digits.splice(i, 1);
+//         digits.splice(j, 0, tmp);
+//         let resultNum = Number(digits.join(""));
+//         console.log(resultNum);
+//         // if (resultNum > n) return resultNum;
+//       }
+//     }
+//   }
+//   if (Number(digits.join("")) > n) return Number(digits.join(""));
+//   return -1;
+// }
+
+// result = nextBigger(398653);
+// console.log(result);
+
+// result = nextBigger(3999854432);
+// console.log(3999854432, result, 4233458999, "--------------");
+
+// result = nextBigger(1234567980);
+// console.log(result);
+
+// request = {
+//   header: {
+//     host: "localhost:3000",
+//     remote: "my-app.com/user/",
+//     method: "GET",
+//     accept: "application/json, text/plain, */*",
+//   },
+// };
+
+// response = {
+//   header: {
+//     host: "localhost:3000",
+//     remote: "google.com/user",
+//     status: 201,
+//     accept: "application/json, text/plain, */*",
+//   },
+//   body: {
+//     error: 'no user with this id'
+//   },
+// };
+
+// mojafUNc = () => {
+//   console.log("moja func");
+// };
+
+// setTimeout(mojafUNc, 100);
+
+// setTimeout(() => {
+//   console.log("drugi posao");
+// }, 100);
+
+mojPosao = new Promise((res, rej) => {
+  responseStatus = 200;
+
+  if (responseStatus === 200) {
+    res("Uspensno zavrsen posao");
+  } else {
+    rej("failed to fetch");
+  }
+});
+
+// mojPosao
+//   .then((result) => {
+//     console.log("USPESNO");
+//     console.log(result);
+//     return "value!!!";
+//   })
+//   .catch((err) => {
+//     console.log("GRESKAAA", err);
+//     console.log(err);
+//   })
+//   .finally(() => {
+//     console.log("FINALY");
+//   });
+
+// fetch(
+//   "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
+// )
+//   .then((response) => response.json())
+//   .then((commits) => {
+//     console.log(commits);
+//   });
+
+// mojPosao = new Promise((resolve, reject) => {
+//   responseStatus = 400;
+
+//   for (let i = 0; i < 900000000; i++) {}
+
+//   if (responseStatus === 200) {
+//     resolve("Uspensno zavrsen posao");
+//   } else {
+//     reject("failed to fetch");
+//   }
+// });
+
+// mojPosao
+//   .then((result) => {
+//     console.log("USPESNO");
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log("GRESKAAA", err);
+//   });
+
+// myUrl = `https://catfact.ninja/facts?page=${1}`;
+
+// pageNum = Number(prompt("Unesite stranu"));
+// myUrl = `https://catfact.ninja/facts?page=${pageNum}`;
+
+// fetch(myUrl)
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((responseBody) => {
+//     console.log(responseBody);
+//     data = responseBody;
+//   })
+//   .catch((err) => {
+//     console.log("GRESKAAA", err);
+//   });
