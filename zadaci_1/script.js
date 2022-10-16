@@ -62,6 +62,45 @@
 // // // }else if(number3 > number1 && number3 > number2){
 // // //     console.log(`${number3} je najveci broj`);
 // // // }
+// console.clear();
+// function even_or_odd(number) {
+//   if (number % 1) {
+//     return "Even";
+//   } else {
+//     return "Odd";
+//   }
+// }
+// let zerin = even_or_odd(-4,32321321);
+// console.log(zerin);
+
+// function positiveSum(arr) {
+//   let mak = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     mak += arr[i];
+//   }
+
+//   arr.forEach((el) => {
+//     return (mak += el);
+//   });
+//   arr.reduce((curr, prevv) => {
+//     return curr + prevv;
+//   }, 0);
+// }
+
+// positiveSum([1, 2, 3, 4, 5]); // resenje 15
+
+// let arr = [1, 2, 3, 10, 4, 5];
+// let maks = arr[0];
+// let secondmaks = arr[1];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > maks) {
+//     secondmaks = maks;
+//     maks = arr[i];
+//   } else if (arr[i] > secondmaks) {
+//     secondmaks = arr[i];
+//   }
+// }
+// console.log(secondmaks);
 
 // // // // 15 zadatak
 
@@ -3186,20 +3225,19 @@ console.log(
 // 	.then(data => console.log(data))
 // 	.catch(err => console.error(err));
 
-let facts = null;
-getDate = fetch("https://catfact.ninja/facts");
+// let facts = null;
+// getDate = fetch("https://catfact.ninja/facts");
 
-getDate
-  .then((response) => {
-    return response.json();
-  })
-  .then((commits) => {
-    facts = commits.data;
-    facts.forEach(element => {
-      console.log(element.fact  );
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
+// getDate
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((commits) => {
+//     facts = commits.data;
+//     facts.forEach(element => {
+//       console.log(element.fact  );
+//     });
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
