@@ -89,7 +89,7 @@
 
 // positiveSum([1, 2, 3, 4, 5]); // resenje 15
 
-// let arr = [1, 2, 3, 10, 4, 5];
+// let arr = [9, 2, 3, 10, 4, 5];
 // let maks = arr[0];
 // let secondmaks = arr[1];
 // for (let i = 0; i < arr.length; i++) {
@@ -2447,31 +2447,31 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 // codewars
 // Find the odd int
 
-function findOdd(num) {
-  let result = 0;
-  let obj = {};
-  // prolazimo kroz niz
-  for (let i = 0; i < num.length; i++) {
-    // ako imamo vec taj broj dodajemo mu jedan
-    if (obj[num[i]]) {
-      obj[num[i]]++;
-      // ako nemamo broj dodajemo u objekat i dajemo mu value jedan.
-    } else {
-      obj[num[i]] = 1;
-    }
-  }
-  // prolazimo kroz objekat
-  for (let key in obj) {
-    // uzimamo vrednost od keyova i pitamo dali je modul od 2 jedan jedan tj. neparan.
-    console.log(key, obj);
-    if (obj[key] % 2 === 1) {
-      // ako jeste dodajemo mu u result taj key
-      result = key;
-    }
-  }
-  // jer svaki key je string moramo vratiti number
-  return Number(result);
-}
+// function findOdd(num) {
+//   let result = 0;
+//   let obj = {};
+//   // prolazimo kroz niz
+//   for (let i = 0; i < num.length; i++) {
+//     // ako imamo vec taj broj dodajemo mu jedan
+//     if (obj[num[i]]) {
+//       obj[num[i]]++;
+//       // ako nemamo broj dodajemo u objekat i dajemo mu value jedan.
+//     } else {
+//       obj[num[i]] = 1;
+//     }
+//   }
+//   // prolazimo kroz objekat
+//   for (let key in obj) {
+//     // uzimamo vrednost od keyova i pitamo dali je modul od 2 jedan jedan tj. neparan.
+//     console.log(key, obj);
+//     if (obj[key] % 2 === 1) {
+//       // ako jeste dodajemo mu u result taj key
+//       result = key;
+//     }
+//   }
+//   // jer svaki key je string moramo vratiti number
+//   return Number(result);
+// }
 
 // console.log(findOdd([1, 1, 2]));
 // // console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
@@ -2943,28 +2943,28 @@ function findOdd(num) {
 
 // codewars
 // pete, the baker
-function cakes(recipe, available) {
-  let br;
+// function cakes(recipe, available) {
+//   let br;
 
-  for (let key in recipe) {
-    if (available[key]) {
-      const noviRecp = Math.floor(available[key] / recipe[key]) || 0;
+//   for (let key in recipe) {
+//     if (available[key]) {
+//       const noviRecp = Math.floor(available[key] / recipe[key]) || 0;
 
-      if (!br || noviRecp < br) {
-        br = noviRecp;
-      }
-    } else {
-      return 0;
-    }
-  }
-  return br;
-}
-console.log(
-  cakes(
-    { flour: 500, sugar: 200, eggs: 1 },
-    { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
-  )
-);
+//       if (!br || noviRecp < br) {
+//         br = noviRecp;
+//       }
+//     } // else {
+//       return 0;
+//     }
+//   }
+//   return br;
+// }
+// console.log(
+//   cakes(
+//     { flour: 500, sugar: 200, eggs: 1 },
+//     { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
+//   )
+// );
 // console.log(
 //   cakes(
 //     { flour: 500, sugar: 200, eggs: 1 },
@@ -3134,7 +3134,7 @@ class personal {
 const novi = new personal("Legi", "Kemal");
 console.log(novi);
 // clousre
-// nasledjivanje
+// nasledjivanjee
 // class Nurse extends Person{
 // super(nickname, lastname)
 // }
@@ -3506,7 +3506,7 @@ mojPosao = new Promise((res, rej) => {
 
 //   for (let i = 0; i < 900000000; i++) {}
 
-//   if (responseStatus === 200) {
+////   if (responseStatus === 200) {
 //     resolve("Uspensno zavrsen posao");
 //   } else {
 //     reject("failed to fetch");
@@ -3537,4 +3537,4 @@ mojPosao = new Promise((res, rej) => {
 //   })
 //   .catch((err) => {
 //     console.log("GRESKAAA", err);
-//   });
+////   });
