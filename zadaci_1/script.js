@@ -2103,6 +2103,23 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 //   return count2;
 // }
 
+//----dom
+// const naslov = document.getElementById('glavni')
+// naslov.style.color = 'red'
+
+// function glavnaF(){
+// if(naslov.style.backgroundColor === 'yellow'){
+//   naslov.style.backgroundColor = 'blue'
+// }else{
+//   naslov.style.backgroundColor = 'yellow'
+// }
+
+
+// }
+
+
+
+
 // console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2]));
 // codewars
 // Simple Fun #176: Reverse Letter
@@ -3538,3 +3555,10 @@ mojPosao = new Promise((res, rej) => {
 //   .catch((err) => {
 //     console.log("GRESKAAA", err);
 ////   });
+
+
+
+
+
+
+
