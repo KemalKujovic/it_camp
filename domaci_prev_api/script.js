@@ -4,7 +4,6 @@ const prevBtn = document.querySelector("#prevPage");
 const nextBtn = document.querySelector("#nextPage");
 let myUrl = `https://catfact.ninja/facts?page=1`;
 let pageN = document.querySelector(".pageNumber");
-const pageNumbers = document.querySelectorAll(".pageNumbers");
 let brojevi = document.querySelector(".brojevi");
 // functions
 function getData() {
@@ -30,23 +29,38 @@ function getData() {
       resData.links.forEach((el) => {
         brojevi.appendChild(createN(el));
       });
+      // active color
+      acitveColor();
     })
+
     .catch((err) => {
       console.log("GRESKAAA", err);
     });
 }
 
+function acitveColor(catFact) {
+  console.log(resData);
+}
+
 function createN(catFact) {
   let broj = document.createElement("p");
-  broj.innerHTML = catFact.label;
-  if (catFact.label === "Next") {
-    broj.classList.add("next");
-  } else if (catFact.label === "Previous") {
-    broj.classList.add("prev");
-  } else {
-    broj.classList.add("brojevi");
+  if (catFact.label !== "Next" && catFact.label !== "Previous") {
+    broj.innerHTML = catFact.label;
+    broj.classList.add("brojeviClass");
+  }
+  // active color on active page
+  if (+broj.innerText === resData.current_page) {
+    broj.classList.add("current-acitve");
   }
   return broj;
+  // next i prev preko api
+  // if (catFact.label === "Next") {
+  //   broj.classList.add("next");
+  // } else if (catFact.label === "Previous") {
+  //   broj.classList.add("prev");
+  // } else {
+  //   broj.classList.add("brojevi");
+  // }
 }
 
 function createCard(catFact) {
@@ -91,13 +105,15 @@ nextBtn.addEventListener("click", goToNextPage);
 
 brojevi.addEventListener("click", function (e) {
   e.preventDefault();
-  if (e.target.classList.contains("next")) {
-    goToNextPage();
-  }
-  if (e.target.classList.contains("prev")) {
-    goToPrevPage();
-  }
-  if (e.target.classList.contains("brojevi")) {
+  // za api preko next i prev
+  // if (e.target.classList.contains("next")) {
+  //   goToNextPage();
+  // }
+  // if (e.target.classList.contains("prev")) {
+  //   goToPrevPage();
+  // }
+
+  if (e.target.classList.contains("brojeviClass")) {
     container.innerHTML = "";
     brojevi.innerHTML = "";
     myUrl = `https://catfact.ninja/facts?page=${e.target.innerText}`;
@@ -108,6 +124,7 @@ brojevi.addEventListener("click", function (e) {
   }
 });
 
+// rcno sto sam pravio
 // pageNumbers.forEach((el) => {
 //   el.addEventListener("click", function (e) {
 //     e.preventDefault();

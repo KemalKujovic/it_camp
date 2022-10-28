@@ -30,7 +30,7 @@ body {
   align-items: center;
 }
 
-.brojevi {
+.brojeviClass {
   display: inline;
   margin-right: 0.5rem;
   font-size: 25px;
@@ -41,7 +41,7 @@ body {
 } */
 
 .current-acitve {
-  color: red;
+  color: white;
 }
 
 .pageNumbers {
