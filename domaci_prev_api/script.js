@@ -5,6 +5,7 @@ const nextBtn = document.querySelector("#nextPage");
 let myUrl = `https://catfact.ninja/facts?page=1`;
 let pageN = document.querySelector(".pageNumber");
 let brojevi = document.querySelector(".brojevi");
+let broj = null;
 // functions
 function getData() {
   fetch(myUrl)
@@ -30,7 +31,7 @@ function getData() {
         brojevi.appendChild(createN(el));
       });
       // active color
-      acitveColor();
+      // acitveColor();
     })
 
     .catch((err) => {
@@ -38,30 +39,27 @@ function getData() {
     });
 }
 
-function acitveColor(catFact) {
-  console.log(resData);
-}
-
 function createN(catFact) {
-  let broj = document.createElement("p");
+  broj = document.createElement("p");
   if (catFact.label !== "Next" && catFact.label !== "Previous") {
     broj.innerHTML = catFact.label;
     broj.classList.add("brojeviClass");
   }
+
   // active color on active page
   if (+broj.innerText === resData.current_page) {
     broj.classList.add("current-acitve");
   }
   return broj;
-  // next i prev preko api
-  // if (catFact.label === "Next") {
-  //   broj.classList.add("next");
-  // } else if (catFact.label === "Previous") {
-  //   broj.classList.add("prev");
-  // } else {
-  //   broj.classList.add("brojevi");
-  // }
 }
+
+// function acitveColor() {
+//   resData.links.forEach((el) => {
+//     if (+broj.innerText === resData.current_page) {
+//       broj.classList.add("current-acitve");
+//     }
+//   });
+// }
 
 function createCard(catFact) {
   let card = document.createElement("p");
@@ -102,17 +100,8 @@ function goToPrevPage() {
 // ---eventslistner ---
 prevBtn.addEventListener("click", goToPrevPage);
 nextBtn.addEventListener("click", goToNextPage);
-
 brojevi.addEventListener("click", function (e) {
   e.preventDefault();
-  // za api preko next i prev
-  // if (e.target.classList.contains("next")) {
-  //   goToNextPage();
-  // }
-  // if (e.target.classList.contains("prev")) {
-  //   goToPrevPage();
-  // }
-
   if (e.target.classList.contains("brojeviClass")) {
     container.innerHTML = "";
     brojevi.innerHTML = "";
@@ -154,4 +143,45 @@ brojevi.addEventListener("click", function (e) {
 //       });
 //     }
 //   });
+// }
+
+// brojevi.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   // za api preko next i prev
+//   // if (e.target.classList.contains("next")) {
+//   //   goToNextPage();
+//   // }
+//   // if (e.target.classList.contains("prev")) {
+//   //   goToPrevPage();
+//   // }
+
+//   if (e.target.classList.contains("brojeviClass")) {
+//     container.innerHTML = "";
+//     brojevi.innerHTML = "";
+//     myUrl = `https://catfact.ninja/facts?page=${e.target.innerText}`;
+//     prevBtn.removeAttribute("disabled");
+//     nextBtn.removeAttribute("disabled");
+
+//     getData();
+//   }
+// // });
+// function createN(catFact) {
+//   let broj = document.createElement("p");
+//   if (catFact.label !== "Next" && catFact.label !== "Previous") {
+//     broj.innerHTML = catFact.label;
+//     broj.classList.add("brojeviClass");
+//   }
+//   // active color on active page
+//   if (+broj.innerText === resData.current_page) {
+//     broj.classList.add("current-acitve");
+//   }
+//   return broj;
+//   // next i prev preko api
+//   // if (catFact.label === "Next") {
+//   //   broj.classList.add("next");
+//   // } else if (catFact.label === "Previous") {
+//   //   broj.classList.add("prev");
+//   // } else {
+//   //   broj.classList.add("brojevi");
+//   // }
 // }
