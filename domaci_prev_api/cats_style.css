@@ -6,7 +6,7 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 20px;
 }
 .fact_card {
   background-color: pink;
@@ -16,6 +16,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   overflow: auto;
+  margin-right: 10px;
 }
 
 .footer {
@@ -25,14 +26,31 @@ body {
   height: 40px;
   background-color: goldenrod;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
 }
 
 .brojevi {
-  display: inline-block;
+  display: inline;
+  margin-right: 0.5rem;
+  font-size: 25px;
 }
 
 /* .brojevi:first-child {
   color: red;
 } */
+
+.current-acitve {
+  color: red;
+}
+
+.pageNumbers {
+  cursor: pointer;
+}
+
+.next {
+  display: inline;
+}
+.prev {
+  display: inline;
+}
