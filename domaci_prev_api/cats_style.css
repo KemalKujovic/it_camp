@@ -39,7 +39,15 @@ body {
 /* .brojevi:first-child {
   color: red;
 } */
-
+#nextPage {
+  margin-left: 5px;
+  padding: 5px;
+}
+#prevPage {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px;
+}
 .current-acitve {
   color: white;
 }

@@ -15,7 +15,7 @@ function getData() {
     .then((responseBody) => {
       resData = responseBody;
       let teksN = pageN.innerText.slice(0, 5);
-      pageN.innerText = teksN + responseBody.current_page;
+      pageN.innerText = teksN + " " + responseBody.current_page;
 
       if (resData.prev_page_url === null) {
         prevBtn.setAttribute("disabled", "true");
@@ -35,7 +35,7 @@ function getData() {
     })
 
     .catch((err) => {
-      console.log("GRESKAAA", err);
+      erorMessage("Greska pokusajte ponovo");
     });
 }
 
@@ -52,14 +52,6 @@ function createN(catFact) {
   }
   return broj;
 }
-
-// function acitveColor() {
-//   resData.links.forEach((el) => {
-//     if (+broj.innerText === resData.current_page) {
-//       broj.classList.add("current-acitve");
-//     }
-//   });
-// }
 
 function createCard(catFact) {
   let card = document.createElement("p");
@@ -112,6 +104,18 @@ brojevi.addEventListener("click", function (e) {
     getData();
   }
 });
+
+function erorMessage(msg) {
+  container.insertAdjacentText("beforeend", msg);
+}
+
+// function acitveColor() {
+//   resData.links.forEach((el) => {
+//     if (+broj.innerText === resData.current_page) {
+//       broj.classList.add("current-acitve");
+//     }
+//   });
+// }
 
 // rcno sto sam pravio
 // pageNumbers.forEach((el) => {
