@@ -2114,11 +2114,7 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 //   naslov.style.backgroundColor = 'yellow'
 // }
 
-
 // }
-
-
-
 
 // console.log(stantonMeasure([1, 4, 3, 2, 1, 2, 3, 2]));
 // codewars
@@ -2388,6 +2384,25 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 //     })
 //     .join("");
 // }
+
+// random num and cha
+// function generateWord(wordLen) {
+//   const chars =
+//     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+//   const max = chars.length - 1;
+
+//   let word = "";
+
+//   for (let i = 0; i < wordLen; i++) {
+//     radnIndex = Math.floor(Math.random() * max);
+//     word += chars[radnIndex];
+//   }
+
+//   console.log(word);
+// }
+
+// generateWord(30);
 
 // codewars
 // Create phone number
@@ -3221,18 +3236,18 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
   }
 }
 
-function Fighter(name, health, damagePerAttack) {
-  this.name = name;
-  this.health = health;
-  this.damagePerAttack = damagePerAttack;
-  this.toString = function () {
-    return this.name;
-  };
-}
+// function Fighter(name, health, damagePerAttack) {
+//   this.name = name;
+//   this.health = health;
+//   this.damagePerAttack = damagePerAttack;
+//   this.toString = function () {
+//     return this.name;
+//   };
+// }
 
-console.log(
-  declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 6, 4), "Lew")
-);
+// console.log(
+//   declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 6, 4), "Lew")
+// );
 
 // garden.bardwoods.io
 // ashync callbackom i promiss (funkcije)
@@ -3556,9 +3571,4 @@ mojPosao = new Promise((res, rej) => {
 //     console.log("GRESKAAA", err);
 ////   });
 
-
-
-
-
-
-
+// codewars
