@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="toasterLogin"></div>
+    <div class="singUp">
+      <h4>Email</h4>
+      <input type="email" id="email_signUp" />
+      <h4>Password</h4>
+      <input type="password" id="password_signUp" />
+      <h4>Username</h4>
+      <input type="text" id="username_signUp" />
+      <h4>Name</h4>
+      <input type="text" id="name_signUp" />
+      <button onclick="signUp()" id="signUpBtn">Register</button>
+    </div>
+
+    <div class="login">
+      <h4>Email</h4>
+      <input
+        type="email"
+        id="email_login"
+        value="kemalkujovic11111@gmail.com"
+      />
+      <h4>Password</h4>
+      <input type="password" id="password_login" value="kemal123" />
+      <button id="loginUpBtn" onclick="login()">Login</button>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
