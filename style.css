@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.singUp,
+.login {
+  margin: 30px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+.login {
+  width: 250px;
+  height: 200px;
+}
+
+button {
+  cursor: pointer;
+}
