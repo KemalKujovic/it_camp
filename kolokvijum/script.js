@@ -26,7 +26,7 @@ class Ucenik {
     container.insertAdjacentHTML("beforeend", html);
   }
   displayPredmeti(predme) {
-    return predme.predme.join(" ");
+    return predme;
   }
 }
 const amina = new Ucenik(
