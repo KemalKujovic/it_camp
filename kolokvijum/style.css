@@ -1,0 +1,47 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.ucenikInfo {
+  display: flex;
+  margin-right: 10px;
+  border: 1px solid black;
+  margin-right: 10px;
+  height: 300px;
+}
+
+.ucenikIme {
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  height: 70px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.ucenikInfo p {
+  font-size: 15px;
+  border-bottom: 1px solid black;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.slikaUcenika {
+  width: 80%;
+  border-left: 1px solid black;
+}
+
+.predmeti {
+  margin-left: 20px;
+}
+
+#logoSlika {
+  width: 100%;
+  height: 100%;
+}
