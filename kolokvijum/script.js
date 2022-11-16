@@ -33,7 +33,7 @@ const amina = new Ucenik(
   "Kemal",
   "Kujovic",
   4,
-  ["Infromacione Tehnologije", "IT", "Ekonomija"],
+  ["Infromacione Tehnologije", "IT", "Ekonomijaa"],
   "ucenik.jpg"
 );
 const temina = new Ucenik(
