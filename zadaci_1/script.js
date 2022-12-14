@@ -1,9 +1,12 @@
+// codewars
+// pretoviriti u promis toaster.
+
 // // // unos = prompt("unesite neku vrednost");
 // // // unos1 = prompt("unesite neku vrednost 2")
 // // // if(unos % 2 === 0){
 // // //     console.log('Broj je paran');
 // // // }else if(unos % 2 === 1){
-// // //     console.log('broj je nepran');
+// // //     console.log('broj je neprann');
 // // // }
 
 // // // if(unos === unos1){
@@ -2385,7 +2388,7 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 //     .join("");
 // }
 
-// random num and cha
+// randomm num and cha
 // function generateWord(wordLen) {
 //   const chars =
 //     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -3156,7 +3159,7 @@ for (let i = 0; i < noviUser.interesovanja.length; i++) {
 // deathzone temporal
 
 // jsv9000
-console.clear();
+// console.clear();
 class personal {
   constructor(nickname, lastName) {
     this.nickname = nickname;
@@ -3176,7 +3179,7 @@ console.log(novi);
 // 4 inhertiance poly nasledjuje ali ako ima istu metodu,funck ona gazi od roditelja i slusa sebe
 
 // ashync
-console.clear();
+// console.clear();
 
 // function nextBigger(n){
 
@@ -3221,20 +3224,20 @@ console.clear();
 
 // sta je internet, https, http tcpi udpb  dns osi ip
 
-// Two fighters, one winner.
-console.clear();
-function declareWinner(fighter1, fighter2, firstAttacker) {
-  const figh1 = Math.ceil(fighter1.health / fighter2.damagePerAttack);
-  const figh2 = Math.ceil(fighter2.health / fighter1.damagePerAttack);
+// Two fighters,, one winner..
+// console.clear();
+// function declareWinner(fighter1, fighter2, firstAttacker) {
+//   const figh1 = Math.ceil(fighter1.health / fighter2.damagePerAttack);
+//   const figh2 = Math.ceil(fighter2.health / fighter1.damagePerAttack);
 
-  if (figh1 < figh2) {
-    return fighter2.name;
-  } else if (figh2 < figh1) {
-    return fighter1.name;
-  } else {
-    return firstAttacker;
-  }
-}
+//   if (figh1 < figh2) {
+//     return fighter2.name;
+//   } else if (figh2 < figh1) {
+//     return fighter1.name;
+//   } else {
+//     return firstAttacker;
+//   }
+///=/ }
 
 // function Fighter(name, health, damagePerAttack) {
 //   this.name = name;
@@ -3501,15 +3504,17 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
 //   console.log("drugi posao");
 // }, 100);
 
-mojPosao = new Promise((res, rej) => {
-  responseStatus = 200;
+// mojPosao = new Promise((res, rej) => {
+//   responseStatus = 200;
 
-  if (responseStatus === 200) {
-    res("Uspensno zavrsen posao");
-  } else {
-    rej("failed to fetch");
-  }
-});
+//   if (responseStatus === 200) {
+//     res("Uspensno zavrsen posao");
+//   } else {
+//     rej("failed to fetch");
+//   }
+// });
+// ///
+// promise
 
 // mojPosao
 //   .then((result) => {
@@ -3570,5 +3575,32 @@ mojPosao = new Promise((res, rej) => {
 //   .catch((err) => {
 //     console.log("GRESKAAA", err);
 ////   });
+// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+// codewars invert
+// function invert(arr) {
+//   let myArr = [];
+//   arr.forEach((el) => {
+//     if (el >= 0) {
+//       myArr.push(-el);
+//     } else {
+//       myArr.push(-el);
+//     }
+//   });
+// //   return myArr;
+// // }
 
-// codewars
+// console.log(invert([1, 2, 3, 4, 5]));
+// console.log(invert([99, 1, -2, 3, -4, 5]));
+// You can assume that all values are integers. Do not mutate the input array/list.
+// codewars 4 key
+// function uniqueInOrder(arr) {
+//   console.log(noviArr);
+//   let konacniArr = [];
+//   for (let i = 0; i < noviArr.length; i++) {
+//     if (noviArr[i] !== noviArr[i + 1]) {
+//       konacniArr.push(noviArr[i]);
+//     }
+//   }
+//   return konacniArr;
+// }
+// console.log(uniqueInOrder("aaaaaabbbbbcccccddddee"));
